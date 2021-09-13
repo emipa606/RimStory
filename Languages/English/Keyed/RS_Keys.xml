@@ -1,65 +1,48 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-
-<ColonyAttacked>{0} attacked your colony. </ColonyAttacked>
-<DayOfVictory>Day of {0} defeat.</DayOfVictory>
-<DayOfVictoryDesc>Your colonists are celebrating {0}'s defeat on\n\n {1}</DayOfVictoryDesc>
-
-<AMarriage>{0} and {1} married.</AMarriage>
-<AMarriageLetter>Marriage anniversary.</AMarriageLetter>
-<AMarriageDesc>{0} and {1} anniversary.</AMarriageDesc>
-
-<AMemorialDay>{0} died.</AMemorialDay>
-<AMemorialDayLetter>Memorial Day.</AMemorialDayLetter>
-<AMemorialDayDesc>Colonist are gathering to honor fallen brothers and sisters.</AMemorialDayDesc>
-
-<ARecruitment>{0} recruited {1}.</ARecruitment>
-
-<ABreakup>{0} brokeup with {1}.</ABreakup>
-
-<ABondedAnimal>Colonist {0} bonded with {1}</ABondedAnimal>
-<ATamed>{0} tamed {1}</ATamed>
-
-<!-- Gatherings -->
-
-<FuneralCalledOff>Funeral called off.</FuneralCalledOff>
-<FuneralFinished>Funeral finished.</FuneralFinished>
-<FuneralLetter>Funeral.</FuneralLetter>
-<FuneralDesc>Colonists are gathering to honor:\n\n</FuneralDesc>
-
-<!-- Incidents -->
-
-<RS_Infestation>Infestation of your colony.</RS_Infestation>
-<RS_Tornado>Tornado.</RS_Tornado>
-<RS_AnimalInsanityMass>Animals went mad.</RS_AnimalInsanityMass>
-<RS_WandererJoin>Wanderer tried to join your colony. </RS_WandererJoin>
-<RS_ManhunterPack>Manhunter pack attacked your colony.</RS_ManhunterPack>
-<RS_RefugeeChased>Refugee tried to get help from your colony.</RS_RefugeeChased>
-<RS_RefugeePodCrash>Refugee crashed on your territory.</RS_RefugeePodCrash>
-<RS_Alphabeavers>Alphabeavers.</RS_Alphabeavers>
-<RS_FarmAnimalsWanderIn>Animals joined your colony.</RS_FarmAnimalsWanderIn>
-<RS_PoisonShipPartCrash>Poison ship crashed.</RS_PoisonShipPartCrash>
-<RS_PsychicEmanatorShipPartCrash>Psychic ship crashed.</RS_PsychicEmanatorShipPartCrash>
-<RS_ColdSnap>Start of Cold Snap</RS_ColdSnap>
-<RS_HeatWave>Start of Heat Wave</RS_HeatWave>
-<RS_ToxicFallout>Beginning of Toxic Fallout</RS_ToxicFallout>
-<RS_VolcanicWinter>Beginning of Volcanic Winter</RS_VolcanicWinter>
-
-
-<!-- Settings -->
-
-<EnEventLogger>Enable events logger: </EnEventLogger>
-<EnFunerals>Enable funeral: </EnFunerals>
-<EnMarriage>Enable marriage anniversaries: </EnMarriage>
-<EnMemorialDay>Enable Memorial Day: </EnMemorialDay>
-<EnDaysOfVictory>Enable Days of Victory: </EnDaysOfVictory>
-<EnIndividualThoughts>Enable individual thoughts: </EnIndividualThoughts>
-
-<!-- Story log filters -->
-<ShowRaidsInLog>Show raids</ShowRaidsInLog>
-<ShowDeadColonistsInLog>Show dead colonists</ShowDeadColonistsInLog>
-<ShowIncidentsInLog>Show incidents</ShowIncidentsInLog>
-
+  <ColonyAttacked>{0} attacked your colony. </ColonyAttacked>
+  <DayOfVictory>Day of {0} defeat.</DayOfVictory>
+  <DayOfVictoryDesc>Your colonists are celebrating {0}'s defeat on\n\n {1}</DayOfVictoryDesc>
+  <AMarriage>{0} and {1} married.</AMarriage>
+  <AMarriageLetter>Marriage anniversary.</AMarriageLetter>
+  <AMarriageDesc>{0} and {1} anniversary.</AMarriageDesc>
+  <AMemorialDay>{0} died.</AMemorialDay>
+  <AMemorialDayLetter>Memorial Day.</AMemorialDayLetter>
+  <AMemorialDayDesc>Colonist are gathering to honor fallen brothers and sisters.</AMemorialDayDesc>
+  <ARecruitment>{0} recruited {1}.</ARecruitment>
+  <ABreakup>{0} brokeup with {1}.</ABreakup>
+  <ABondedAnimal>Colonist {0} bonded with {1}</ABondedAnimal>
+  <ATamed>{0} tamed {1}</ATamed>
+  <!-- Gatherings -->
+  <FuneralCalledOff>Funeral called off.</FuneralCalledOff>
+  <FuneralFinished>Funeral finished.</FuneralFinished>
+  <FuneralLetter>Funeral.</FuneralLetter>
+  <FuneralDesc>Colonists are gathering to honor:\n\n</FuneralDesc>
+  <!-- Incidents -->
+  <RS_Infestation>Infestation of your colony.</RS_Infestation>
+  <RS_Tornado>Tornado.</RS_Tornado>
+  <RS_AnimalInsanityMass>Animals went mad.</RS_AnimalInsanityMass>
+  <RS_WandererJoin>Wanderer tried to join your colony. </RS_WandererJoin>
+  <RS_ManhunterPack>Manhunter pack attacked your colony.</RS_ManhunterPack>
+  <RS_RefugeeChased>Refugee tried to get help from your colony.</RS_RefugeeChased>
+  <RS_RefugeePodCrash>Refugee crashed on your territory.</RS_RefugeePodCrash>
+  <RS_Alphabeavers>Alphabeavers.</RS_Alphabeavers>
+  <RS_FarmAnimalsWanderIn>Animals joined your colony.</RS_FarmAnimalsWanderIn>
+  <RS_PoisonShipPartCrash>Poison ship crashed.</RS_PoisonShipPartCrash>
+  <RS_PsychicEmanatorShipPartCrash>Psychic ship crashed.</RS_PsychicEmanatorShipPartCrash>
+  <RS_ColdSnap>Start of Cold Snap</RS_ColdSnap>
+  <RS_HeatWave>Start of Heat Wave</RS_HeatWave>
+  <RS_ToxicFallout>Beginning of Toxic Fallout</RS_ToxicFallout>
+  <RS_VolcanicWinter>Beginning of Volcanic Winter</RS_VolcanicWinter>
+  <!-- Settings -->
+  <EnEventLogger>Enable events logger: </EnEventLogger>
+  <EnFunerals>Enable funeral: </EnFunerals>
+  <EnMarriage>Enable marriage anniversaries: </EnMarriage>
+  <EnMemorialDay>Enable Memorial Day: </EnMemorialDay>
+  <EnDaysOfVictory>Enable Days of Victory: </EnDaysOfVictory>
+  <EnIndividualThoughts>Enable individual thoughts: </EnIndividualThoughts>
+  <!-- Story log filters -->
+  <ShowRaidsInLog>Show raids</ShowRaidsInLog>
+  <ShowDeadColonistsInLog>Show dead colonists</ShowDeadColonistsInLog>
+  <ShowIncidentsInLog>Show incidents</ShowIncidentsInLog>
 </LanguageData>

@@ -1,34 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Relative Died -->
-
   <RS_DayDiedLover.stages.0.label>Сегодня мой любовник умер.</RS_DayDiedLover.stages.0.label>
   <RS_DayDiedLover.stages.0.description>Никто его не заменит.</RS_DayDiedLover.stages.0.description>
-
   <RS_DayDiedSpouse.stages.0.label>Сегодня мой супруг умер.</RS_DayDiedSpouse.stages.0.label>
   <RS_DayDiedSpouse.stages.0.description>Никто не заменит моего супруга.</RS_DayDiedSpouse.stages.0.description>
-
   <RS_DayDiedFiance.stages.0.label>Сегодня мой жених умер.</RS_DayDiedFiance.stages.0.label>
   <RS_DayDiedFiance.stages.0.description>Никто не заменит моего жениха.</RS_DayDiedFiance.stages.0.description>
-
   <RS_DayDiedChild.stages.0.label>Кто-то умер из детей</RS_DayDiedChild.stages.0.label>
   <RS_DayDiedChild.stages.0.description>грусно (мне надоело переводить тоже грусно)</RS_DayDiedChild.stages.0.description>
-
   <RS_DayDiedMother.stages.0.label>Сегодня моя мать умерла.</RS_DayDiedMother.stages.0.label>
   <RS_DayDiedMother.stages.0.description>твою мать как же так то (киньте в группу вк по римке п.с я лайкаю каждый пост)</RS_DayDiedMother.stages.0.description>
-
   <RS_DayDiedFather.stages.0.label>Сегодня мой отец умер.</RS_DayDiedFather.stages.0.label>
   <RS_DayDiedFather.stages.0.description>Земля тебе пухом, братан... ой, всмысле, батян да</RS_DayDiedFather.stages.0.description>
-
   <RS_DayDiedSibling.stages.0.label>Сегодня мой брат умер.</RS_DayDiedSibling.stages.0.label>
   <RS_DayDiedSibling.stages.0.description>Мне не хватает этого пидораса блять.</RS_DayDiedSibling.stages.0.description>
-
-
   <!-- Other -->
-
   <RS_DayBreakup.stages.0.label>Год назад...</RS_DayBreakup.stages.0.label>
   <RS_DayBreakup.stages.0.description>Мы расстались ровно год назад...</RS_DayBreakup.stages.0.description>
-
-
 </LanguageData>

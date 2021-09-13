@@ -1,43 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-
   <ColonyAttacked>{0} Атаковали вашу колонию.</ColonyAttacked>
   <DayOfVictory>{0} Были побеждены.</DayOfVictory>
   <DayOfVictoryDesc>Ваши колонисты празднуют победу над {0} в дату n\n{1}</DayOfVictoryDesc>
-
   <AMarriage>{0} И {1} Поженились!</AMarriage>
   <AMarriageLetter>Годовщина Свадьбы</AMarriageLetter>
   <AMarriageDesc>Годовщина у колонистов {0} и {1}.</AMarriageDesc>
-
   <AMemorialDay>{0} Умер((</AMemorialDay>
   <AMemorialDayLetter>День памяти о колонисте.</AMemorialDayLetter>
   <AMemorialDayDesc>Колонисты собираются в честь павших братьев и систер...</AMemorialDayDesc>
-
   <ARecruitment>{0} завербовал {1}.</ARecruitment>
-
   <ABreakup>{0} расстался с {1}.</ABreakup>
-
   <ABondedAnimal>Колонист {0} привязался к животному {1}.</ABondedAnimal>
   <ATamed>Колонист {0} приручил {1}.</ATamed>
-
   <!-- Gatherings -->
-
   <FuneralCalledOff>Похороны отменены</FuneralCalledOff>
   <FuneralFinished>Похороны закончились.</FuneralFinished>
   <FuneralLetter>Похороны</FuneralLetter>
   <FuneralDesc>Колонисты собираются в честь:\n\n</FuneralDesc>
-
-
-
   <!-- Settings -->
-
   <EnEventLogger>Включить запись событий：</EnEventLogger>
   <EnFunerals>Похороны：</EnFunerals>
   <EnMarriage>Годовщины：</EnMarriage>
   <EnMemorialDay>Дни памяти о колонисте：</EnMemorialDay>
   <EnDaysOfVictory>Дни побед：</EnDaysOfVictory>
   <EnIndividualThoughts>Мысли колонистов：</EnIndividualThoughts>
-
 </LanguageData>

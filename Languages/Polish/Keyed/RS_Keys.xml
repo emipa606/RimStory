@@ -1,41 +1,28 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-
-<ColonyAttacked>{0} zaatakowali twoją kolonię. </ColonyAttacked>
-<DayOfVictory>Rocznica wygranej bitwy.</DayOfVictory>
-<DayOfVictoryDesc>Twoi koloniści celebrują zwycięstwo z {0} dnia \n\n {1}</DayOfVictoryDesc>
-
-<AMarriage>{0} oraz {1} zawarli małżeństwo.</AMarriage>
-<AMarriageLetter>Rocznica małżeństwa.</AMarriageLetter>
-<AMarriageDesc>Rocznica małżeństwa {0} oraz {1} .</AMarriageDesc>
-
-<AMemorialDay>{0} zmarł.</AMemorialDay>
-<AMemorialDayLetter>Dzień Pamięci.</AMemorialDayLetter>
-<AMemorialDayDesc>Koloniści zbierają się by uczcić swoich zmarłych.</AMemorialDayDesc>
-
-<ARecruitment>{0} zrekrutował {1}.</ARecruitment>
-
-<ABreakup>{0} zerwał z {1}.</ABreakup>
-
-<ABondedAnimal>{0} związał się z {1}</ABondedAnimal>
-<ATamed>{0} oswoił {1}</ATamed>
-
-<!-- Gatherings -->
-
-<FuneralCalledOff>Pogrzeb odwołany.</FuneralCalledOff>
-<FuneralFinished>Pogrzeb zakończony.</FuneralFinished>
-<FuneralLetter>Pogrzeb.</FuneralLetter>
-<FuneralDesc>Koloniści zbierają się by poźegnać:\n\n</FuneralDesc>
-
-<!-- Settings -->
-
-<EnEventLogger>Zezwól na zapisywanie wydarzeń: </EnEventLogger>
-<EnFunerals>Pogrzeby: </EnFunerals>
-<EnMarriage>Rocznice związków: </EnMarriage>
-<EnMemorialDay>Dzień Pamięci: </EnMemorialDay>
-<EnDaysOfVictory>Dni Zwycięstwa: </EnDaysOfVictory>
-<EnIndividualThoughts>Pozwól kolonistom na osobiste przemyślenia: </EnIndividualThoughts>
-
+  <ColonyAttacked>{0} zaatakowali twoją kolonię. </ColonyAttacked>
+  <DayOfVictory>Rocznica wygranej bitwy.</DayOfVictory>
+  <DayOfVictoryDesc>Twoi koloniści celebrują zwycięstwo z {0} dnia \n\n {1}</DayOfVictoryDesc>
+  <AMarriage>{0} oraz {1} zawarli małżeństwo.</AMarriage>
+  <AMarriageLetter>Rocznica małżeństwa.</AMarriageLetter>
+  <AMarriageDesc>Rocznica małżeństwa {0} oraz {1} .</AMarriageDesc>
+  <AMemorialDay>{0} zmarł.</AMemorialDay>
+  <AMemorialDayLetter>Dzień Pamięci.</AMemorialDayLetter>
+  <AMemorialDayDesc>Koloniści zbierają się by uczcić swoich zmarłych.</AMemorialDayDesc>
+  <ARecruitment>{0} zrekrutował {1}.</ARecruitment>
+  <ABreakup>{0} zerwał z {1}.</ABreakup>
+  <ABondedAnimal>{0} związał się z {1}</ABondedAnimal>
+  <ATamed>{0} oswoił {1}</ATamed>
+  <!-- Gatherings -->
+  <FuneralCalledOff>Pogrzeb odwołany.</FuneralCalledOff>
+  <FuneralFinished>Pogrzeb zakończony.</FuneralFinished>
+  <FuneralLetter>Pogrzeb.</FuneralLetter>
+  <FuneralDesc>Koloniści zbierają się by poźegnać:\n\n</FuneralDesc>
+  <!-- Settings -->
+  <EnEventLogger>Zezwól na zapisywanie wydarzeń: </EnEventLogger>
+  <EnFunerals>Pogrzeby: </EnFunerals>
+  <EnMarriage>Rocznice związków: </EnMarriage>
+  <EnMemorialDay>Dzień Pamięci: </EnMemorialDay>
+  <EnDaysOfVictory>Dni Zwycięstwa: </EnDaysOfVictory>
+  <EnIndividualThoughts>Pozwól kolonistom na osobiste przemyślenia: </EnIndividualThoughts>
 </LanguageData>

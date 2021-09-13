@@ -1,17 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <RS_AttendedOurAnniversary.stages.0.label>Посетили нашу годовщину.</RS_AttendedOurAnniversary.stages.0.label>
   <RS_AttendedOurAnniversary.stages.0.description>Слушой, спосибо за это... (кинь мой юмар в группу по римке)</RS_AttendedOurAnniversary.stages.0.description>
-
   <RS_AttendedAnniversary.stages.0.label>Посетили годовщину.</RS_AttendedAnniversary.stages.0.label>
   <RS_AttendedAnniversary.stages.0.description>Важный день в колонии, прошу заметить, господа!</RS_AttendedAnniversary.stages.0.description>
-
   <RS_AttendedFuneral.stages.0.label>Посетили похороны.</RS_AttendedFuneral.stages.0.label>
   <RS_AttendedFuneral.stages.0.description>Земля тебе пухом, братан.</RS_AttendedFuneral.stages.0.description>
-
   <RS_AttendedMemorialDay.stages.0.label>День памяти о колонисте.</RS_AttendedMemorialDay.stages.0.label>
   <RS_AttendedMemorialDay.stages.0.description>Почтим братьев и сестер что пали в битве с белками!</RS_AttendedMemorialDay.stages.0.description>
-
-
 </LanguageData>

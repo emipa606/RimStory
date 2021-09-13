@@ -1,36 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-
   <ColonyAttacked>{0}があなたのコロニーを襲撃しました。</ColonyAttacked>
   <DayOfVictory>{0}を撃退した戦勝記念日</DayOfVictory>
   <DayOfVictoryDesc>入植者たちは{0}の敗北を祝っています。\n\n{1}</DayOfVictoryDesc>
-
   <AMarriage>{0}と{1}が結婚しました。</AMarriage>
   <AMarriageLetter>結婚記念日</AMarriageLetter>
   <AMarriageDesc>{0}と{1}の結婚記念日です。</AMarriageDesc>
-
   <AMemorialDay>{0}が死亡しました。</AMemorialDay>
   <AMemorialDayLetter>命日</AMemorialDayLetter>
   <AMemorialDayDesc>亡くなった兄弟姉妹たちを称える入植者が集まっています。</AMemorialDayDesc>
-
   <ARecruitment>{0}が{1}を勧誘した。</ARecruitment>
-
   <ABreakup>{0}が{1}と別れました。</ABreakup>
-
   <ABondedAnimal>入植者{0}が{1}と絆で結ばれました。</ABondedAnimal>
   <ATamed>{0}が{1}を飼いならした。</ATamed>
-
   <!-- Gatherings -->
-
   <FuneralCalledOff>葬儀がしめやかに営まれた。</FuneralCalledOff>
   <FuneralFinished>葬儀がとどこおりなく終わった。</FuneralFinished>
   <FuneralLetter>葬儀</FuneralLetter>
   <FuneralDesc>入植者たちが集まった:\n\n</FuneralDesc>
-
   <!-- Incidents -->
-
   <RS_Infestation>コロニーへの襲撃があった</RS_Infestation>
   <RS_Tornado>トルネードが発生した</RS_Tornado>
   <RS_AnimalInsanityMass>動物が暴走した</RS_AnimalInsanityMass>
@@ -46,20 +34,15 @@
   <RS_HeatWave>熱波が始まった</RS_HeatWave>
   <RS_ToxicFallout>死の灰が降り始めた</RS_ToxicFallout>
   <RS_VolcanicWinter>火山の冬が始まった</RS_VolcanicWinter>
-
-
   <!-- Settings -->
-
   <EnEventLogger>イベントログを有効：</EnEventLogger>
   <EnFunerals>葬儀を有効：</EnFunerals>
   <EnMarriage>結婚記念日を有効：</EnMarriage>
   <EnMemorialDay>命日を有効：</EnMemorialDay>
   <EnDaysOfVictory>戦勝記念日を有効：</EnDaysOfVictory>
   <EnIndividualThoughts>個人の記念日を有効：</EnIndividualThoughts>
-
   <!-- Story log filters -->
   <ShowRaidsInLog>襲撃を表示</ShowRaidsInLog>
   <ShowDeadColonistsInLog>入植者の死を表示</ShowDeadColonistsInLog>
   <ShowIncidentsInLog>事件を表示</ShowIncidentsInLog>
-
 </LanguageData>

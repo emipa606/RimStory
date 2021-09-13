@@ -1,43 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <LanguageData>
-
-
   <ColonyAttacked>{0} griff deine Kolonie an. </ColonyAttacked>
   <DayOfVictory>Tag des {0} Sieges.</DayOfVictory>
   <DayOfVictoryDesc>Deine Kolonie feiert den Sieg über {0} an\n\n {1}</DayOfVictoryDesc>
-
   <AMarriage>{0}s und {1}s heirateten.</AMarriage>
   <AMarriageLetter>Hochzeitstag.</AMarriageLetter>
   <AMarriageDesc>{0}s und {1}s Jahrestag.</AMarriageDesc>
-
   <AMemorialDay>{0} starb.</AMemorialDay>
   <AMemorialDayLetter>Gedenktag.</AMemorialDayLetter>
   <AMemorialDayDesc>Kolonisten versammeln sich um ihren gefallenen Brüdern und Schwestern zu gedenken.</AMemorialDayDesc>
-
   <ARecruitment>{0} warb {1} an.</ARecruitment>
-
   <ABreakup>{0} machte mit {1} schluß.</ABreakup>
-
   <ABondedAnimal>Kolonist {0} schloß {1} ins Herz</ABondedAnimal>
   <ATamed>{0} zähmte {1}</ATamed>
-
   <!-- Gatherings -->
-
   <FuneralCalledOff>Beerdigung abgesagt.</FuneralCalledOff>
   <FuneralFinished>Beerdigung beendet.</FuneralFinished>
   <FuneralLetter>Beerdigung.</FuneralLetter>
   <FuneralDesc>Kolonisten versammeln sich zur Ehre von:\n\n</FuneralDesc>
-
-
-
   <!-- Settings -->
-
   <EnEventLogger>Schalte Ereignisprotokoll ein: </EnEventLogger>
   <EnFunerals>Erlaube Beerdigung: </EnFunerals>
   <EnMarriage>Erlaube Hochzeitstag: </EnMarriage>
   <EnMemorialDay>Erlaube Gedenktag: </EnMemorialDay>
   <EnDaysOfVictory>Erlaube Siegtag: </EnDaysOfVictory>
   <EnIndividualThoughts>Erlaube individualisierte Gedanken: </EnIndividualThoughts>
-
 </LanguageData>

@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <Story.label>物語</Story.label>
   <Story.description>あなたのコロニーで起きた出来事を閲覧します。</Story.description>
-
-
 </LanguageData>

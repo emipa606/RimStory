@@ -1,38 +1,26 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-
-<ColonyAttacked>{0}이 정착지를 공격했습니다. </ColonyAttacked>
-<DayOfVictory>{0}을 물리친 날.</DayOfVictory>
-<DayOfVictoryDesc>정착민들이 모여 {0}을 물리친 것을 축하하고 있습니다\n\n {1}이</DayOfVictoryDesc>
-
-<AMarriage>{0}과 {1}이 결혼했습니다.</AMarriage>
-<AMarriageLetter>결혼기념일.</AMarriageLetter>
-<AMarriageDesc>{0}과 {1}의 결혼기념일입니다.</AMarriageDesc>
-
-<AMemorialDay>{0}이 사망했습니다.</AMemorialDay>
-<AMemorialDayLetter>기일.</AMemorialDayLetter>
-<AMemorialDayDesc>정착민들이 모여 죽은 형제 자매를 추모하고 있습니다.</AMemorialDayDesc>
-
-<ARecruitment>{0}이 {1}을 설득했습니다.</ARecruitment>
-
-<ABreakup>{0}은 {1}과 헤어졌습니다.</ABreakup>
-
-<!-- Gatherings -->
-
-<FuneralCalledOff>장례식이 취소되었습니다.</FuneralCalledOff>
-<FuneralFinished>장례식이 끝났습니다.</FuneralFinished>
-<FuneralLetter>장례식.</FuneralLetter>
-<FuneralDesc>정착민들이 추모를 위해 모이고 있습니다:\n\n</FuneralDesc>
-
-<!-- Settings -->
-
-<EnEventLogger>이벤트 로그 보기: </EnEventLogger>
-<EnFunerals>장례식 활성화: </EnFunerals>
-<EnMarriage>결혼기념일 활성화: </EnMarriage>
-<EnMemorialDay>기일 활성화: </EnMemorialDay>
-<EnDaysOfVictory>전승 기념일 활성화: </EnDaysOfVictory>
-<EnIndividualThoughts>개인적인 생각 활성화: </EnIndividualThoughts>
-
+  <ColonyAttacked>{0}이 정착지를 공격했습니다. </ColonyAttacked>
+  <DayOfVictory>{0}을 물리친 날.</DayOfVictory>
+  <DayOfVictoryDesc>정착민들이 모여 {0}을 물리친 것을 축하하고 있습니다\n\n {1}이</DayOfVictoryDesc>
+  <AMarriage>{0}과 {1}이 결혼했습니다.</AMarriage>
+  <AMarriageLetter>결혼기념일.</AMarriageLetter>
+  <AMarriageDesc>{0}과 {1}의 결혼기념일입니다.</AMarriageDesc>
+  <AMemorialDay>{0}이 사망했습니다.</AMemorialDay>
+  <AMemorialDayLetter>기일.</AMemorialDayLetter>
+  <AMemorialDayDesc>정착민들이 모여 죽은 형제 자매를 추모하고 있습니다.</AMemorialDayDesc>
+  <ARecruitment>{0}이 {1}을 설득했습니다.</ARecruitment>
+  <ABreakup>{0}은 {1}과 헤어졌습니다.</ABreakup>
+  <!-- Gatherings -->
+  <FuneralCalledOff>장례식이 취소되었습니다.</FuneralCalledOff>
+  <FuneralFinished>장례식이 끝났습니다.</FuneralFinished>
+  <FuneralLetter>장례식.</FuneralLetter>
+  <FuneralDesc>정착민들이 추모를 위해 모이고 있습니다:\n\n</FuneralDesc>
+  <!-- Settings -->
+  <EnEventLogger>이벤트 로그 보기: </EnEventLogger>
+  <EnFunerals>장례식 활성화: </EnFunerals>
+  <EnMarriage>결혼기념일 활성화: </EnMarriage>
+  <EnMemorialDay>기일 활성화: </EnMemorialDay>
+  <EnDaysOfVictory>전승 기념일 활성화: </EnDaysOfVictory>
+  <EnIndividualThoughts>개인적인 생각 활성화: </EnIndividualThoughts>
 </LanguageData>

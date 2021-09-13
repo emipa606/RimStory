@@ -1,34 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Relative Died -->
-
   <RS_DayDiedLover.stages.0.label>An diesem Tag starb mein(e) Liebhaber(in)</RS_DayDiedLover.stages.0.label>
   <RS_DayDiedLover.stages.0.description>Niemand kann meine(n) Liebhaber(in) ersetzen.</RS_DayDiedLover.stages.0.description>
-
   <RS_DayDiedSpouse.stages.0.label>An diesem Tag starb mein Ehegatte</RS_DayDiedSpouse.stages.0.label>
   <RS_DayDiedSpouse.stages.0.description>Niemand kann meine(n) geliebte(n) Gatten/in ersetzen</RS_DayDiedSpouse.stages.0.description>
-
   <RS_DayDiedFiance.stages.0.label>An diesem Tag starb mein(e) Verlobte(r).</RS_DayDiedFiance.stages.0.label>
   <RS_DayDiedFiance.stages.0.description>Niemand kann meine(n) Verlobten/in ersetzen.</RS_DayDiedFiance.stages.0.description>
-
   <RS_DayDiedChild.stages.0.label>An diesem Tag starb mein Kind.</RS_DayDiedChild.stages.0.label>
   <RS_DayDiedChild.stages.0.description>Niemand kann mein armes Kind ersetzen.</RS_DayDiedChild.stages.0.description>
-
   <RS_DayDiedMother.stages.0.label>An diesem Tag starb meine Mutter</RS_DayDiedMother.stages.0.label>
   <RS_DayDiedMother.stages.0.description>Ruhe in Frieden Mutter.</RS_DayDiedMother.stages.0.description>
-
   <RS_DayDiedFather.stages.0.label>An diesem Tag starb mein Vater</RS_DayDiedFather.stages.0.label>
   <RS_DayDiedFather.stages.0.description>Ruhe in Frieden Vater.</RS_DayDiedFather.stages.0.description>
-
   <RS_DayDiedSibling.stages.0.label>An diesem Tag starb mein Geschwisterlein.</RS_DayDiedSibling.stages.0.label>
   <RS_DayDiedSibling.stages.0.description>Du fehlst mir.</RS_DayDiedSibling.stages.0.description>
-
-
   <!-- Other -->
-
   <RS_DayBreakup.stages.0.label>vor Jahren</RS_DayBreakup.stages.0.label>
   <RS_DayBreakup.stages.0.description>Du fehlst mir.</RS_DayBreakup.stages.0.description>
-
-
 </LanguageData>

@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <RS_AttendedOurAnniversary.stages.0.label>attended our anniversary</RS_AttendedOurAnniversary.stages.0.label>
   <RS_AttendedOurAnniversary.stages.0.description>That was such important day of my life!</RS_AttendedOurAnniversary.stages.0.description>
-
   <RS_AttendedAnniversary.stages.0.label>attended anniversary</RS_AttendedAnniversary.stages.0.label>
   <RS_AttendedAnniversary.stages.0.description>That was important day for our colony.</RS_AttendedAnniversary.stages.0.description>
-
   <RS_AttendedFuneral.stages.0.label>attended funeral</RS_AttendedFuneral.stages.0.label>
   <RS_AttendedFuneral.stages.0.description>Rest in peace.</RS_AttendedFuneral.stages.0.description>
-
   <RS_AttendedMemorialDay.stages.0.label>attended memorial day</RS_AttendedMemorialDay.stages.0.label>
   <RS_AttendedMemorialDay.stages.0.description>It's good to remember our fallen brothers and sisters.</RS_AttendedMemorialDay.stages.0.description>
-
-
 </LanguageData>

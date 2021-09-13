@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>RimStory</name>
-	<author>Khaligufzel</author>
-	<targetVersion>0.18.0</targetVersion>
-	<description> v 1.10 &#xD;
+  <name>RimStory (Continued)</name>
+  <packageId>Mlie.RimStory</packageId>
+  <author>Khaligufzel</author>
+  <url>https://github.com/emipa606/RimStory</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+Update of Khaligufzels mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1713190031
+Version 1.1 and 1.2 update by m1st4x
+https://github.com/m1st4x/RimStory
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/RimStory][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+Better 1.1 and 1.2 version here:
+https://github.com/m1st4x/RimStory
+
+Original Mod:
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=1500272404&amp;searchtext=rimstory
+
+
+Original Author: Khaligufzel
+
+Github: https://github.com/hodldeeznuts/RimStory
+Github Release (non-steam version): https://github.com/hodldeeznuts/RimStory/releases/tag/1.11
+
+REQUIRES: HugsLib
+
+
+Note from me: All I did was remove the errors from this mod and make it work with 1.0. I am not really familiar with the mod whatsoever so I'll listen to feedback. If the original mod owner wants to take this back over please do!
+
+Join my discord! https://discord.gg/qrtg224
+
+[Copied from original mod]
+
+ v 1.11
 
 # RimStory
 
@@ -84,6 +140,16 @@ A: NO! Not at ALL!
 
 	
 Powered by Harmony (THANKS!).
-	</description>
-	<url>https://steamcommunity.com/id/Khaligufzel/myworkshopfiles/?appid=294100</url>
+
+[img]https://i.imgur.com/PwoNOj4.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

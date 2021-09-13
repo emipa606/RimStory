@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <RS_AttendedOurAnniversary.stages.0.label>wohnte unserem Jahrestag bei</RS_AttendedOurAnniversary.stages.0.label>
   <RS_AttendedOurAnniversary.stages.0.description>Das war solch ein wichtiger Tag in meinem Leben!</RS_AttendedOurAnniversary.stages.0.description>
-
   <RS_AttendedAnniversary.stages.0.label>Besuchte Geburtstag</RS_AttendedAnniversary.stages.0.label>
   <RS_AttendedAnniversary.stages.0.description>Das war ein wichtiger Tag für die Kolonie.</RS_AttendedAnniversary.stages.0.description>
-
   <RS_AttendedFuneral.stages.0.label>wohne Beerdigung bei.</RS_AttendedFuneral.stages.0.label>
   <RS_AttendedFuneral.stages.0.description>Ruhe in Frieden.</RS_AttendedFuneral.stages.0.description>
-
   <RS_AttendedMemorialDay.stages.0.label>wohne Gedenktag bei</RS_AttendedMemorialDay.stages.0.label>
   <RS_AttendedMemorialDay.stages.0.description>Es ist wichtig den gefallenen Brüdern und Schwestern zu gedenken.</RS_AttendedMemorialDay.stages.0.description>
-
-
 </LanguageData>

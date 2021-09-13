@@ -1,37 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Relative Died -->
-
   <RS_DayDiedLover.stages.0.label>今天是我爱人去世的那一天。</RS_DayDiedLover.stages.0.label>
   <RS_DayDiedLover.stages.0.description>没有人可以代替我的挚爱。</RS_DayDiedLover.stages.0.description>
-
   <RS_DayDiedSpouse.stages.0.label>今天是我配偶去世的那一天。</RS_DayDiedSpouse.stages.0.label>
   <RS_DayDiedSpouse.stages.0.description>没有人可以代替我的挚爱。</RS_DayDiedSpouse.stages.0.description>
-
   <RS_DayDiedFiance.stages.0.label>今天是我未婚夫/妻去世的那一天。</RS_DayDiedFiance.stages.0.label>
   <RS_DayDiedFiance.stages.0.description>没有人可以代替我的挚爱。</RS_DayDiedFiance.stages.0.description>
-
   <RS_DayDiedChild.stages.0.label>今天是我孩子去世的那一天。</RS_DayDiedChild.stages.0.label>
   <RS_DayDiedChild.stages.0.description>没有人可以代替我可怜的孩子。</RS_DayDiedChild.stages.0.description>
-
   <RS_DayDiedMother.stages.0.label>今天是我母亲去世的那一天。</RS_DayDiedMother.stages.0.label>
   <RS_DayDiedMother.stages.0.description>愿你安息，母亲。</RS_DayDiedMother.stages.0.description>
-
   <RS_DayDiedFather.stages.0.label>今天是我父亲去世的那一天。</RS_DayDiedFather.stages.0.label>
   <RS_DayDiedFather.stages.0.description>愿你安息，父亲。</RS_DayDiedFather.stages.0.description>
-
   <RS_DayDiedSibling.stages.0.label>今天是我兄弟/姐妹去世的那一天。</RS_DayDiedSibling.stages.0.label>
   <RS_DayDiedSibling.stages.0.description>我很想念你。</RS_DayDiedSibling.stages.0.description>
-
-
   <!-- Other -->
-
   <RS_DayBreakup.stages.0.label>年前</RS_DayBreakup.stages.0.label>
   <RS_DayBreakup.stages.0.description>我很想念你。</RS_DayBreakup.stages.0.description>
-
   <RS_ChitchatPast.stages.0.label>今天是我爱人去世的那一天。</RS_ChitchatPast.stages.0.label>
   <RS_ChitchatPast.stages.0.description>没有人可以代替我的挚爱。</RS_ChitchatPast.stages.0.description>
-
-
 </LanguageData>

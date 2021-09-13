@@ -1,37 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Relative Died -->
-
   <RS_DayDiedLover.stages.0.label>今日は私の恋人の命日です。</RS_DayDiedLover.stages.0.label>
   <RS_DayDiedLover.stages.0.description>誰も私の恋人の代わりにはなりません。</RS_DayDiedLover.stages.0.description>
-
   <RS_DayDiedSpouse.stages.0.label>今日は私の配偶者の命日です。</RS_DayDiedSpouse.stages.0.label>
   <RS_DayDiedSpouse.stages.0.description>誰も私の愛した相手の代わりにはなりません。</RS_DayDiedSpouse.stages.0.description>
-
   <RS_DayDiedFiance.stages.0.label>今日は私の婚約者の命日です。</RS_DayDiedFiance.stages.0.label>
   <RS_DayDiedFiance.stages.0.description>誰も私の婚約者の代わりにはなりません。</RS_DayDiedFiance.stages.0.description>
-
   <RS_DayDiedChild.stages.0.label>今日はわが子の命日です。</RS_DayDiedChild.stages.0.label>
   <RS_DayDiedChild.stages.0.description>誰も私の可哀想な子供の代わりにはなりません。</RS_DayDiedChild.stages.0.description>
-
   <RS_DayDiedMother.stages.0.label>今日は私の母親の命日です。</RS_DayDiedMother.stages.0.label>
   <RS_DayDiedMother.stages.0.description>お母さん、どうか安らかに眠ってください。</RS_DayDiedMother.stages.0.description>
-
   <RS_DayDiedFather.stages.0.label>今日は私の父親の命日です。</RS_DayDiedFather.stages.0.label>
   <RS_DayDiedFather.stages.0.description>お父さん、どうか安らかに眠ってください。</RS_DayDiedFather.stages.0.description>
-
   <RS_DayDiedSibling.stages.0.label>今日は私の兄弟の命日です。</RS_DayDiedSibling.stages.0.label>
   <RS_DayDiedSibling.stages.0.description>あなたがいないと寂しいですよ。</RS_DayDiedSibling.stages.0.description>
-
-
   <!-- Other -->
-
   <RS_DayBreakup.stages.0.label>もう何年だろう</RS_DayBreakup.stages.0.label>
   <RS_DayBreakup.stages.0.description>あなたがいないと寂しいですよ。</RS_DayBreakup.stages.0.description>
-
   <RS_ChitchatPast.stages.0.label>もう何年だろう(噂話)</RS_ChitchatPast.stages.0.label>
   <RS_ChitchatPast.stages.0.description>あの人が居なくなって何年だろうと話題になりました。</RS_ChitchatPast.stages.0.description>
-
-
 </LanguageData>
