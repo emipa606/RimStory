@@ -17,7 +17,7 @@ https://github.com/m1st4x/RimStory
 
 Original Mod:
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=1500272404&amp;searchtext=rimstory
+https://steamcommunity.com/sharedfiles/filedetails/?id=1500272404&searchtext=rimstory
 
 
 Original Author: Khaligufzel

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ColonyAttacked>{0} Atacó tu colonia. </ColonyAttacked>
+  <DayOfVictory>Días desde que {0} perdio.</DayOfVictory>
+  <DayOfVictoryDesc>Tus colonos celebran que {0}'s perdió el\n\n {1}</DayOfVictoryDesc>
+  <AMarriage>{0} y {1} se casaron.</AMarriage>
+  <AMarriageLetter>Aniversario de casamiento.</AMarriageLetter>
+  <AMarriageDesc>Aniversario de {0} y {1}.</AMarriageDesc>
+  <AMemorialDay>{0} murió.</AMemorialDay>
+  <AMemorialDayLetter>Día de los caídos.</AMemorialDayLetter>
+  <AMemorialDayDesc>Los colonos se reunen en honor a sus hermanos y hermanas caídos.</AMemorialDayDesc>
+  <ARecruitment>{0} recluto a {1}.</ARecruitment>
+  <ABreakup>{0} rompió con {1}.</ABreakup>
+  <ABondedAnimal>Colono {0} se encariño con {1}</ABondedAnimal>
+  <ATamed>{0} domesticó {1}</ATamed>
+  <!-- Gatherings -->
+  <FuneralCalledOff>Funeral cancelado.</FuneralCalledOff>
+  <FuneralFinished>Funeral terminado.</FuneralFinished>
+  <FuneralLetter>Funeral.</FuneralLetter>
+  <FuneralDesc>Colonos se reunen en honor a:\n\n</FuneralDesc>
+  <!-- Incidents -->
+  <RS_Infestation>Infestación en tu colonia.</RS_Infestation>
+  <RS_Tornado>Tornado.</RS_Tornado>
+  <RS_AnimalInsanityMass>Animales enloquecieron.</RS_AnimalInsanityMass>
+  <RS_WandererJoin>Trotamundos trató de unirse a tú colonia. </RS_WandererJoin>
+  <RS_ManhunterPack>Manada de caza hombres atacó tú colonia.</RS_ManhunterPack>
+  <RS_RefugeeChased>Refugiado trató de obtener ayuda de tú colonia.</RS_RefugeeChased>
+  <RS_RefugeePodCrash>Capsula de refugiado aterrizo en tú territorio.</RS_RefugeePodCrash>
+  <RS_Alphabeavers>Alphacastor.</RS_Alphabeavers>
+  <RS_FarmAnimalsWanderIn>Animales se unieron a tu colonia.</RS_FarmAnimalsWanderIn>
+  <RS_PoisonShipPartCrash>Choco cápsula tóxica.</RS_PoisonShipPartCrash>
+  <RS_PsychicEmanatorShipPartCrash>Choco cápsula psíquica.</RS_PsychicEmanatorShipPartCrash>
+  <RS_ColdSnap>Comienzo de una ola de frio</RS_ColdSnap>
+  <RS_HeatWave>Comienzo de una ola de calor</RS_HeatWave>
+  <RS_ToxicFallout>Comienzo de una lluvia tóxica</RS_ToxicFallout>
+  <RS_VolcanicWinter>Comienzo de un invierno volcánico</RS_VolcanicWinter>
+  <!-- Settings -->
+  <EnEventLogger>Activa eventos registrables: </EnEventLogger>
+  <EnFunerals>Activa funeral: </EnFunerals>
+  <EnMarriage>Activa aniversarios de casamientos: </EnMarriage>
+  <EnMemorialDay>Activa día de la memoria: </EnMemorialDay>
+  <EnDaysOfVictory>Activa día de victoria: </EnDaysOfVictory>
+  <EnIndividualThoughts>Activa pensamientos individuales: </EnIndividualThoughts>
+  <!-- Story log filters -->
+  <ShowRaidsInLog>Muestra ataques</ShowRaidsInLog>
+  <ShowDeadColonistsInLog>Muestra colonos muertos</ShowDeadColonistsInLog>
+  <ShowIncidentsInLog>Muestra incidentes</ShowIncidentsInLog>
+</LanguageData>

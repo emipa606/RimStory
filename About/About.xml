@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>RimStory (Continued)</name>
   <packageId>Mlie.RimStory</packageId>
@@ -152,4 +152,3 @@ Powered by Harmony (THANKS!).
 [/list]
 </description>
 </ModMetaData>
-

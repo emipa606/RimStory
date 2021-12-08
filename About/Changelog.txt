@@ -1,4 +1,7 @@
 # Changelog for RimStory
 
+1.0.2.0 - Spanish translation added, thanks El Bongo!
+
+
 1.0.1.0 - Updated to 1.3
 
