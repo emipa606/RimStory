@@ -7,6 +7,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1713190031
 Version 1.1 and 1.2 update by m1st4x
 https://github.com/m1st4x/RimStory
 
+- Spanish translation added, thanks El Bongo!
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
