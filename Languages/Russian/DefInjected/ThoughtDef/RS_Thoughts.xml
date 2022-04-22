@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Relative Died -->
+
+  <RS_DayDiedLover.stages.0.label>Сегодня день, когда умер мой возлюбленный.</RS_DayDiedLover.stages.0.label>
+  <RS_DayDiedLover.stages.0.description>Никто не сможет заменить моего возлюбленного.</RS_DayDiedLover.stages.0.description>
+
+  <RS_DayDiedSpouse.stages.0.label>Сегодня день смерти моего супруга.</RS_DayDiedSpouse.stages.0.label>
+  <RS_DayDiedSpouse.stages.0.description>Никто не сможет заменить моего дорогого супруга.</RS_DayDiedSpouse.stages.0.description>
+
+  <RS_DayDiedFiance.stages.0.label>Сегодня день смерти моего жениха.</RS_DayDiedFiance.stages.0.label>
+  <RS_DayDiedFiance.stages.0.description>Никто не заменит моего жениха.</RS_DayDiedFiance.stages.0.description>
+
+  <RS_DayDiedChild.stages.0.label>Сегодня день смерти моего ребенка.</RS_DayDiedChild.stages.0.label>
+  <RS_DayDiedChild.stages.0.description>Никто не сможет заменить моего бедного ребенка.</RS_DayDiedChild.stages.0.description>
+
+  <RS_DayDiedMother.stages.0.label>Сегодня день смерти моей матери.</RS_DayDiedMother.stages.0.label>
+  <RS_DayDiedMother.stages.0.description>Покойся с миром, мама.</RS_DayDiedMother.stages.0.description>
+
+  <RS_DayDiedFather.stages.0.label>Сегодня день смерти моего отца.</RS_DayDiedFather.stages.0.label>
+  <RS_DayDiedFather.stages.0.description>Покойся с миром, отец.</RS_DayDiedFather.stages.0.description>
+
+  <RS_DayDiedSibling.stages.0.label>Сегодня день смерти моего (брата/сестры).</RS_DayDiedSibling.stages.0.label>
+  <RS_DayDiedSibling.stages.0.description>Я скучаю по тебе.</RS_DayDiedSibling.stages.0.description>
+
+
+  <!-- Other -->
+
+  <RS_DayBreakup.stages.0.label>Год назад</RS_DayBreakup.stages.0.label>
+  <RS_DayBreakup.stages.0.description>Я скучаю по тебе.</RS_DayBreakup.stages.0.description>
+
+  <RS_ChitchatPast.stages.0.label>Сегодня день, когда умер мой любимый.</RS_ChitchatPast.stages.0.label>
+  <RS_ChitchatPast.stages.0.description>Никто не может заменить моего любимого.</RS_ChitchatPast.stages.0.description>
+
+
+</LanguageData>
