@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <RS_AttendedOurAnniversary.stages.0.label>присутствовали на нашей годовщине</RS_AttendedOurAnniversary.stages.0.label>
   <RS_AttendedOurAnniversary.stages.0.description>Это был такой важный день в моей жизни!</RS_AttendedOurAnniversary.stages.0.description>
-
   <RS_AttendedAnniversary.stages.0.label>присутствовали на юбилее</RS_AttendedAnniversary.stages.0.label>
   <RS_AttendedAnniversary.stages.0.description>Это был важный день для нашей колонии.</RS_AttendedAnniversary.stages.0.description>
-
   <RS_AttendedFuneral.stages.0.label>присутствовали на похоронах</RS_AttendedFuneral.stages.0.label>
   <RS_AttendedFuneral.stages.0.description>Покойся с миром.</RS_AttendedFuneral.stages.0.description>
-
   <RS_AttendedMemorialDay.stages.0.label>День памяти о колонисте.</RS_AttendedMemorialDay.stages.0.label>
   <RS_AttendedMemorialDay.stages.0.description>Надо помнить наших павших братьев и сестер.</RS_AttendedMemorialDay.stages.0.description>
-
-
 </LanguageData>
