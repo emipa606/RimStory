@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ColonyAttacked>{0} атаковали вашу колонию. </ColonyAttacked>
+  <DayOfVictory>{0} Были побеждены.</DayOfVictory>
+  <DayOfVictoryDesc>Ваши колонисты празднуют победу над {0} в дату\n\n {1}</DayOfVictoryDesc>
+  <AMarriage>{0} и {1} поженились.</AMarriage>
+  <AMarriageLetter>Годовщина брака.</AMarriageLetter>
+  <AMarriageDesc>Годовщина у колонистов {0} и {1}.</AMarriageDesc>
+  <AMemorialDay>{0} умер.</AMemorialDay>
+  <AMemorialDayLetter>День памяти.</AMemorialDayLetter>
+  <AMemorialDayDesc>Колонисты собираются, чтобы почтить память погибших братьев и сестер.</AMemorialDayDesc>
+  <ARecruitment>{0} завербовал {1}.</ARecruitment>
+  <ABreakup>{0} расстался с {1}.</ABreakup>
+  <ABondedAnimal>Колонист {0} связан с {1}</ABondedAnimal>
+  <ATamed>{0} приручил {1}</ATamed>
+  <!-- Gatherings -->
+  <FuneralCalledOff>Похороны отменены.</FuneralCalledOff>
+  <FuneralFinished>Похороны завершены.</FuneralFinished>
+  <FuneralLetter>Похороны.</FuneralLetter>
+  <FuneralDesc>Колонисты собираются, чтобы почтить:\n\n</FuneralDesc>
+  <!-- Incidents -->
+  <RS_Infestation>Заражение вашей колонии.</RS_Infestation>
+  <RS_Tornado>Торнадо.</RS_Tornado>
+  <RS_AnimalInsanityMass>Животные сошли с ума.</RS_AnimalInsanityMass>
+  <RS_WandererJoin>Странник пытался присоединиться к вашей колонии. </RS_WandererJoin>
+  <RS_ManhunterPack>Охотничья стая напала на вашу колонию.</RS_ManhunterPack>
+  <RS_RefugeeChased>Беженец пытался получить помощь от вашей колонии.</RS_RefugeeChased>
+  <RS_RefugeePodCrash>Беженец разбился на вашей территории.</RS_RefugeePodCrash>
+  <RS_Alphabeavers>Альфабобры.</RS_Alphabeavers>
+  <RS_FarmAnimalsWanderIn>Животные присоединились к вашей колонии.</RS_FarmAnimalsWanderIn>
+  <RS_PoisonShipPartCrash>Токсичный корабль потерпел крушение.</RS_PoisonShipPartCrash>
+  <RS_PsychicEmanatorShipPartCrash>Пси корабль разбился.</RS_PsychicEmanatorShipPartCrash>
+  <RS_ColdSnap>Начало похолодания</RS_ColdSnap>
+  <RS_HeatWave>Начало волны тепла</RS_HeatWave>
+  <RS_ToxicFallout>Начало токсичных осадков</RS_ToxicFallout>
+  <RS_VolcanicWinter>Начало вулканической зимы</RS_VolcanicWinter>
+  <!-- Settings -->
+  <EnEventLogger>Включить запись событий： </EnEventLogger>
+  <EnFunerals>Включить похороны: </EnFunerals>
+  <EnMarriage>Включить годовщины брака: </EnMarriage>
+  <EnMemorialDay>Включить День памяти: </EnMemorialDay>
+  <EnDaysOfVictory>Включить дни победы: </EnDaysOfVictory>
+  <EnIndividualThoughts>Включить индивидуальные мысли: </EnIndividualThoughts>
+  <!-- Story log filters -->
+  <ShowRaidsInLog>Показывать рейды</ShowRaidsInLog>
+  <ShowDeadColonistsInLog>Показать мертвых колонистов</ShowDeadColonistsInLog>
+  <ShowIncidentsInLog>Показать события</ShowIncidentsInLog>
+
+</LanguageData>
