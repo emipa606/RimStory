@@ -2,15 +2,14 @@
 using RimWorld;
 using Verse;
 
-namespace RimStory.Harmony
+namespace RimStory.Harmony;
+
+[HarmonyPatch(typeof(InteractionWorker_Breakup))]
+[HarmonyPatch("RandomBreakupReason")]
+internal class RandomBreakup
 {
-    [HarmonyPatch(typeof(InteractionWorker_Breakup))]
-    [HarmonyPatch("RandomBreakupReason")]
-    internal class RandomBreakup
+    private static void Postfix(Thought __result, ref Pawn initiator, ref Pawn recipient)
     {
-        private static void Postfix(Thought __result, ref Pawn initiator, ref Pawn recipient)
-        {
-            Resources.eventsLog.Add(new Breakup(Utils.CurrentDate(), initiator, recipient, __result));
-        }
+        Resources.eventsLog.Add(new Breakup(Utils.CurrentDate(), initiator, recipient, __result));
     }
 }

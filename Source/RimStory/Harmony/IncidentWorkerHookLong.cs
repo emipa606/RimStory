@@ -2,15 +2,14 @@
 using RimWorld;
 using Verse;
 
-namespace RimStory.Harmony
+namespace RimStory.Harmony;
+
+[HarmonyPatch(typeof(GameCondition))]
+[HarmonyPatch("Init")]
+internal class IncidentWorkerHookLong
 {
-    [HarmonyPatch(typeof(GameCondition))]
-    [HarmonyPatch("Init")]
-    internal class IncidentWorkerHookLong
+    private static void Postfix(IncidentWorker __instance)
     {
-        private static void Postfix(IncidentWorker __instance)
-        {
-            Log.Message($"it works {__instance.def.defName}");
-        }
+        Log.Message($"it works {__instance.def.defName}");
     }
 }

@@ -8,6 +8,7 @@ Version 1.1 and 1.2 update by m1st4x
 https://github.com/m1st4x/RimStory
 
 - Spanish translation added, thanks El Bongo!
+- Updated Russian translation, thank you AndreyRGW!
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -128,6 +129,7 @@ Powered by Harmony (THANKS!).
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

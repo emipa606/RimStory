@@ -2,31 +2,30 @@
 using Verse;
 using Verse.AI;
 
-namespace RimStory
+namespace RimStory;
+
+internal class JobGiver_AttendFuneral : ThinkNode_JobGiver
 {
-    internal class JobGiver_AttendFuneral : ThinkNode_JobGiver
+    protected override Job TryGiveJob(Pawn pawn)
     {
-        protected override Job TryGiveJob(Pawn pawn)
+        var grave = FindGrave();
+        if (grave == null)
         {
-            var grave = FindGrave();
-            if (grave == null)
-            {
-                return null;
-            }
-
-            return new Job(RS_JobDefOf.AttendFuneral, grave);
+            return null;
         }
 
-
-        private Building_Grave FindGrave()
-        {
-            return Resources.lastGrave;
-        }
+        return new Job(RS_JobDefOf.AttendFuneral, grave);
+    }
 
 
-        public class RS_JobDefOf
-        {
-            public static JobDef AttendFuneral;
-        }
+    private Building_Grave FindGrave()
+    {
+        return Resources.lastGrave;
+    }
+
+
+    public class RS_JobDefOf
+    {
+        public static JobDef AttendFuneral;
     }
 }

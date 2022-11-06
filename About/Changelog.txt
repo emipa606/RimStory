@@ -1,5 +1,8 @@
 # Changelog for RimStory
 
+1.4.1 - Mod updated for 1.4 and passed autotests
+
+
 1.3.2 - Updated Russian translation, thank you AndreyRGW!
 
 

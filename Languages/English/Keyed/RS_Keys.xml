@@ -35,6 +35,7 @@
   <RS_ToxicFallout>Beginning of Toxic Fallout</RS_ToxicFallout>
   <RS_VolcanicWinter>Beginning of Volcanic Winter</RS_VolcanicWinter>
   <!-- Settings -->
+  <EnCurrentModVersion>Installed mod-version: {0}</EnCurrentModVersion>
   <EnEventLogger>Enable events logger: </EnEventLogger>
   <EnFunerals>Enable funeral: </EnFunerals>
   <EnMarriage>Enable marriage anniversaries: </EnMarriage>
