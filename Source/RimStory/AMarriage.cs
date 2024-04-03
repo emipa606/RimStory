@@ -11,7 +11,7 @@ internal class AMarriage : IEvent
     private bool anniversary = true;
     private Date date;
     private Pawn pawn1, pawn2;
-    private List<int> yearsWhenEventStarted = new List<int>();
+    private List<int> yearsWhenEventStarted = [];
 
     public AMarriage()
     {
@@ -101,10 +101,10 @@ internal class AMarriage : IEvent
         yearsWhenEventStarted.Add(Utils.CurrentYear());
 
         //Lord lord = LordMaker.MakeNewLord(pawn1.Faction, new LordJob_Joinable_Party(intVec, pawn1), map, null);
-        var unused = LordMaker.MakeNewLord(pawn1.Faction,
+        _ = LordMaker.MakeNewLord(pawn1.Faction,
             new LordJob_Joinable_Party(intVec, pawn1, GatheringDefOf.Party), map);
 
-        //Find.LetterStack.ReceiveLetter("Marriage anniversary", pawn1.LabelShort + " and " + pawn2.LabelShort + " anniversary.", LetterDefOf.PositiveEvent);
+        //Find.LetterStack.ReceiveLetter("Wedding anniversary", pawn1.LabelShort + " and " + pawn2.LabelShort + " anniversary.", LetterDefOf.PositiveEvent);
         Find.LetterStack.ReceiveLetter("AMarriageLetter".Translate(),
             "AMarriageDesc".Translate(pawn1.LabelShort, pawn2.LabelShort),
             LetterDefOf.PositiveEvent);

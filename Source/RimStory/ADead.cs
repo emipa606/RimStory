@@ -10,7 +10,7 @@ internal class ADead : IEvent
     private bool anniversary = true;
     private Date date;
     private Pawn deadPawn;
-    private List<int> yearsWhenEventStarted = new List<int>();
+    private List<int> yearsWhenEventStarted = [];
 
     public ADead()
     {
@@ -62,7 +62,7 @@ internal class ADead : IEvent
 
     public bool TryStartEvent(Map map)
     {
-        var unused = deadPawn.relations.RelatedPawns;
+        _ = deadPawn.relations.RelatedPawns;
 
 
         if (Utils.CurrentDay() != date.day || Utils.CurrentQuadrum() != date.quadrum ||

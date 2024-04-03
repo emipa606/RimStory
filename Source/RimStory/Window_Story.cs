@@ -7,7 +7,7 @@ namespace RimStory;
 
 internal class Window_Story : MainTabWindow
 {
-    public static int sie = 0;
+    public static readonly int sie = 0;
     public static Vector2 vect = new Vector2(sie, sie);
     public static Vector2 logSize;
 

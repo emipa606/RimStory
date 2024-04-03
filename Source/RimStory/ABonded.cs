@@ -9,7 +9,7 @@ internal class ABonded : IEvent
     private Date date;
     private Pawn pawn, animal;
 
-    private List<int> yearsWhenEventStarted = new List<int>();
+    private List<int> yearsWhenEventStarted = [];
 
     public ABonded()
     {

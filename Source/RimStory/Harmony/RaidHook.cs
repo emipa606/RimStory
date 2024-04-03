@@ -3,8 +3,7 @@ using RimWorld;
 
 namespace RimStory.Harmony;
 
-[HarmonyPatch(typeof(IncidentWorker_RaidEnemy))]
-[HarmonyPatch("TryExecuteWorker")]
+[HarmonyPatch(typeof(IncidentWorker_RaidEnemy), "TryExecuteWorker")]
 internal class RaidHook
 {
     private static void Postfix(IncidentParms parms)

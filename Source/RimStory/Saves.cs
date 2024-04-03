@@ -4,12 +4,8 @@ using Verse;
 namespace RimStory;
 
 //public class Saves : UtilityWorldObject
-public class Saves : WorldComponent
+public class Saves(World world) : WorldComponent(world)
 {
-    public Saves(World world) : base(world)
-    {
-    }
-
     public override void ExposeData()
     {
         //base.ExposeData();

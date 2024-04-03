@@ -4,8 +4,7 @@ using Verse;
 
 namespace RimStory.Harmony;
 
-[HarmonyPatch(typeof(InteractionWorker_Breakup))]
-[HarmonyPatch("RandomBreakupReason")]
+[HarmonyPatch(typeof(InteractionWorker_Breakup), nameof(InteractionWorker_Breakup.RandomBreakupReason))]
 internal class RandomBreakup
 {
     private static void Postfix(Thought __result, ref Pawn initiator, ref Pawn recipient)

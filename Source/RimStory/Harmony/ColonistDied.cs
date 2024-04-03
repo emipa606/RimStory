@@ -3,8 +3,7 @@ using Verse;
 
 namespace RimStory.Harmony;
 
-[HarmonyPatch(typeof(Pawn))]
-[HarmonyPatch("Kill")]
+[HarmonyPatch(typeof(Pawn), nameof(Pawn.Kill))]
 internal class ColonistDied
 {
     private static void Prefix(Pawn __instance)

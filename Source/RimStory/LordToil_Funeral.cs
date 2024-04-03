@@ -38,7 +38,7 @@ internal class LordToil_Funeral : LordToil
     {
         foreach (var pawn in lord.ownedPawns)
         {
-            pawn.mindState.duty = new PawnDuty(DutyDefOf.Party, spot);
+            pawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamedSilentFail("Party"), spot);
         }
     }
 

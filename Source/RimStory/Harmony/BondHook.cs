@@ -4,8 +4,7 @@ using Verse;
 
 namespace RimStory.Harmony;
 
-[HarmonyPatch(typeof(RelationsUtility))]
-[HarmonyPatch("TryDevelopBondRelation")]
+[HarmonyPatch(typeof(RelationsUtility), nameof(RelationsUtility.TryDevelopBondRelation))]
 internal class BondHook
 {
     private static void Postfix(bool __result, ref Pawn humanlike, ref Pawn animal)
@@ -15,7 +14,6 @@ internal class BondHook
             return;
         }
 
-        Log.Message("bonded");
         Resources.eventsLog.Add(new ABonded(Utils.CurrentDate(), humanlike, animal));
     }
 }

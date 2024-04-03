@@ -4,8 +4,7 @@ using Verse;
 
 namespace RimStory.Harmony;
 
-[HarmonyPatch(typeof(IncidentWorker))]
-[HarmonyPatch("TryExecute")]
+[HarmonyPatch(typeof(IncidentWorker), nameof(IncidentWorker.TryExecute))]
 internal class IncidentWorkerHookShort
 {
     private static void Postfix(IncidentWorker __instance, bool __result)
@@ -15,52 +14,27 @@ internal class IncidentWorkerHookShort
             return;
         }
 
-        if (__instance is IncidentWorker_AnimalInsanityMass)
+        switch (__instance)
         {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
-        }
-
-
-        if (__instance is IncidentWorker_ManhunterPack)
-        {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
-        }
-
-        if (__instance is IncidentWorker_ColdSnap)
-        {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
-        }
-
-        if (__instance is IncidentWorker_HeatWave)
-        {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
-        }
-
-        if (__instance is IncidentWorker_FarmAnimalsWanderIn)
-        {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
-        }
-
-        if (__instance is IncidentWorker_Infestation)
-        {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
-        }
-
-        if (__instance is IncidentWorker_WandererJoin)
-        {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
+            case IncidentWorker_AnimalInsanityMass:
+            case IncidentWorker_AggressiveAnimals:
+            case IncidentWorker_ColdSnap:
+            case IncidentWorker_HeatWave:
+            case IncidentWorker_FarmAnimalsWanderIn:
+            case IncidentWorker_Infestation:
+            case IncidentWorker_WandererJoin:
+                Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
+                break;
         }
 
         ////////////////////// DIRTY HACKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-        if (__instance.def.defName == "VolcanicWinter")
+        switch (__instance.def.defName)
         {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
-        }
-
-        if (__instance.def.defName == "ToxicFallout")
-        {
-            Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
+            case "VolcanicWinter":
+            case "ToxicFallout":
+                Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
+                break;
         }
 
         Log.Warning(__instance.def.defName);

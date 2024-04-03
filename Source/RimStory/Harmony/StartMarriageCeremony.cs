@@ -4,8 +4,8 @@ using Verse;
 
 namespace RimStory.Harmony;
 
-[HarmonyPatch(typeof(VoluntarilyJoinableLordsStarter))]
-[HarmonyPatch("TryStartMarriageCeremony")]
+[HarmonyPatch(typeof(VoluntarilyJoinableLordsStarter),
+    nameof(VoluntarilyJoinableLordsStarter.TryStartMarriageCeremony))]
 internal class StartMarriageCeremony
 {
     private static void Postfix(ref Pawn firstFiance, ref Pawn secondFiance)

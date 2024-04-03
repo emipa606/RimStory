@@ -13,7 +13,6 @@ public class Date : IExposable
     {
     }
 
-
     public Date(int day, Quadrum quadrum, int year)
     {
         this.day = day;

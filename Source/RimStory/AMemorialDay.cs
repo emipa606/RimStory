@@ -11,7 +11,7 @@ internal class AMemorialDay : IEvent
     private bool anniversary = true;
     private Date date;
     private Pawn deadPawn;
-    private List<int> yearsWhenEventStarted = new List<int>();
+    private List<int> yearsWhenEventStarted = [];
 
     public AMemorialDay()
     {
@@ -87,7 +87,7 @@ internal class AMemorialDay : IEvent
             return false;
         }
 
-        //Pawn pawn = PartyUtility.FindRandomPartyOrganizer(Faction.OfPlayer, map);
+        //Pawn = PartyUtility.FindRandomPartyOrganizer(Faction.OfPlayer, map);
         var pawn = GatheringsUtility.FindRandomGatheringOrganizer(Faction.OfPlayer, map, GatheringDefOf.Party);
 
         if (pawn == null)
@@ -103,7 +103,7 @@ internal class AMemorialDay : IEvent
 
         yearsWhenEventStarted.Add(Utils.CurrentYear());
         //Lord lord = LordMaker.MakeNewLord(pawn.Faction, new LordJob_Joinable_Party(intVec, pawn), map, null);
-        var unused = LordMaker.MakeNewLord(pawn.Faction,
+        _ = LordMaker.MakeNewLord(pawn.Faction,
             new LordJob_Joinable_Party(intVec, pawn, GatheringDefOf.Party), map);
 
         //Find.LetterStack.ReceiveLetter("Memorial Day", "Colonist are gathering to honor fallen colonists.", LetterDefOf.PositiveEvent);

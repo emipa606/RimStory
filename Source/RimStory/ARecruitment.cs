@@ -58,15 +58,12 @@ internal class ARecruitment : IEvent
         if (!recruitee.NonHumanlikeOrWildMan())
         {
             return
-                $"{date.day} {date.quadrum} {date.year} {"ARecruitment".Translate(recruiter.Name, recruitee.Name)}";
+                $"{date.day} {date.quadrum} {date.year} {"ARecruitment".Translate(recruiter.Name.ToString(), recruitee.Name.ToString())}";
         }
 
-        if (recruitee.NonHumanlikeOrWildMan())
-        {
-            return $"{date.day} {date.quadrum} {date.year} {"ATamed".Translate(recruiter.Name, recruitee.Name)}";
-        }
-
-        return null;
+        return recruitee.NonHumanlikeOrWildMan()
+            ? $"{date.day} {date.quadrum} {date.year} {"ATamed".Translate(recruiter.Name.ToString(), recruitee.Name.ToString())}"
+            : null;
     }
 
     public bool TryStartEvent()

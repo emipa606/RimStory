@@ -97,6 +97,6 @@ public class RimStory : ModBase
     {
         base.WorldLoaded();
         //var obj = UtilityWorldObjectManager.GetUtilityWorldObject<Saves>();
-        var unused = Find.World.GetComponent<Saves>();
+        _ = Find.World.GetComponent<Saves>();
     }
 }

@@ -19,7 +19,7 @@ public static class MassFuneral
             return false;
         }
 
-        //Pawn pawn = PartyUtility.FindRandomPartyOrganizer(Faction.OfPlayer, map);
+        //Pawn = PartyUtility.FindRandomPartyOrganizer(Faction.OfPlayer, map);
         var pawn = GatheringsUtility.FindRandomGatheringOrganizer(Faction.OfPlayer, map, GatheringDefOf.Party);
 
         if (pawn == null)
@@ -41,7 +41,7 @@ public static class MassFuneral
             }
         }
 
-        var unused = LordMaker.MakeNewLord(pawn.Faction, new LordJob_RimStory(Resources.lastGrave.Position, pawn),
+        _ = LordMaker.MakeNewLord(pawn.Faction, new LordJob_RimStory(Resources.lastGrave.Position, pawn),
             map);
         Find.LetterStack.ReceiveLetter("FuneralLetter".Translate(), "FuneralDesc".Translate() + deadPawnsNames,
             LetterDefOf.NeutralEvent, Resources.lastGrave);

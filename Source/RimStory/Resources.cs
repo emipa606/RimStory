@@ -10,8 +10,8 @@ public static class Resources
 {
     public static Map TEST_MAP;
 
-    public static Random rng = new Random();
-    public static int randomChanceRaid = 6;
+    public static readonly Random rng = new Random();
+    public static readonly int randomChanceRaid = 6;
 
 
     public static int xxx;
@@ -19,24 +19,24 @@ public static class Resources
     public static Vector2 vect = new Vector2(xxx, yyy);
 
 
-    public static int minHour = 10;
-    public static int maxHour = 20;
+    public static readonly int minHour = 10;
+    public static readonly int maxHour = 20;
 
-    public static List<Pawn> deadPawnsForMassFuneral = new List<Pawn>();
-    public static List<Pawn> deadPawnsForMassFuneralBuried = new List<Pawn>();
-    public static List<Building_Grave> graves = new List<Building_Grave>();
+    public static List<Pawn> deadPawnsForMassFuneral = [];
+    public static List<Pawn> deadPawnsForMassFuneralBuried = [];
+    public static List<Building_Grave> graves = [];
 
 
-    public static List<IEvent> events = new List<IEvent>();
-    public static List<IEvent> eventsToDelete = new List<IEvent>();
+    public static List<IEvent> events = [];
+    public static readonly List<IEvent> eventsToDelete = [];
 
-    public static List<IEvent> eventsLog = new List<IEvent>();
-    public static List<Pawn> pawnsAttended = new List<Pawn>();
+    public static List<IEvent> eventsLog = [];
+    public static List<Pawn> pawnsAttended = [];
 
 
     public static Building_Grave lastGrave;
 
-    public static List<Pawn> deadPawns = new List<Pawn>();
+    public static readonly List<Pawn> deadPawns = [];
 
     public static bool isMemorialDayCreated = false;
     public static Date dateLastFuneral = null;

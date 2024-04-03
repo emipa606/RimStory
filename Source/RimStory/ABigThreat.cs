@@ -11,7 +11,7 @@ internal class ABigThreat : IEvent
     private bool anniversary = true;
     private Date date;
     private Faction faction;
-    private List<int> yearsWhenEventStarted = new List<int>();
+    private List<int> yearsWhenEventStarted = [];
 
     public ABigThreat()
     {
@@ -109,7 +109,7 @@ internal class ABigThreat : IEvent
         yearsWhenEventStarted.Add(Utils.CurrentYear());
 
         yearsWhenEventStarted.Add(Utils.CurrentYear());
-        var unused = LordMaker.MakeNewLord(pawn.Faction,
+        _ = LordMaker.MakeNewLord(pawn.Faction,
             new LordJob_Joinable_Party(intVec, pawn, GatheringDefOf.Party), map);
 
         string label = "DayOfVictory".Translate(faction.Name);
