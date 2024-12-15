@@ -5,7 +5,7 @@ using Verse;
 namespace RimStory.Harmony;
 
 [HarmonyPatch(typeof(IncidentWorker), nameof(IncidentWorker.TryExecute))]
-internal class IncidentWorkerHookShort
+internal class IncidentWorker_TryExecute
 {
     private static void Postfix(IncidentWorker __instance, bool __result)
     {

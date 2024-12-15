@@ -6,7 +6,7 @@ namespace RimStory.Harmony;
 
 [HarmonyPatch(typeof(VoluntarilyJoinableLordsStarter),
     nameof(VoluntarilyJoinableLordsStarter.TryStartMarriageCeremony))]
-internal class StartMarriageCeremony
+internal class VoluntarilyJoinableLordsStarter_TryStartMarriageCeremony
 {
     private static void Postfix(ref Pawn firstFiance, ref Pawn secondFiance)
     {

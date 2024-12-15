@@ -5,8 +5,8 @@ using Verse;
 namespace RimStory.Harmony;
 
 [HarmonyPatch(typeof(InteractionWorker_RecruitAttempt), nameof(InteractionWorker_RecruitAttempt.DoRecruit),
-    [typeof(Pawn), typeof(Pawn), typeof(bool)])]
-internal class DoRecruitHook
+    typeof(Pawn), typeof(Pawn), typeof(bool))]
+internal class InteractionWorker_RecruitAttempt_DoRecruit
 {
     private static void Postfix(Pawn recruiter, Pawn recruitee)
     {

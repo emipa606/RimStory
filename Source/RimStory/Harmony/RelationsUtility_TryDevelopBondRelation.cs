@@ -5,7 +5,7 @@ using Verse;
 namespace RimStory.Harmony;
 
 [HarmonyPatch(typeof(RelationsUtility), nameof(RelationsUtility.TryDevelopBondRelation))]
-internal class BondHook
+internal class RelationsUtility_TryDevelopBondRelation
 {
     private static void Postfix(bool __result, ref Pawn humanlike, ref Pawn animal)
     {

@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>11bd1ec9-1189-4a2b-866b-d4e6f9883b55</ID>
   <ModName>RimStory (Continued)</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.5.1</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,3 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
+

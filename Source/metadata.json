@@ -2,5 +2,10 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "0",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.5",
+  "SocialImageSet": true,
+  "SearchTags": [
+    " events",
+    " memories"
+  ]
 }
