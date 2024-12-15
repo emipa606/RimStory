@@ -62,6 +62,9 @@ internal class ADead : IEvent
 
     public bool TryStartEvent(Map map)
     {
+        if (!deadPawn.Dead)
+            return false;
+
         _ = deadPawn.relations.RelatedPawns;
 
 
