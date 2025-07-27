@@ -45,4 +45,6 @@
   <ShowRaidsInLog>展示突袭</ShowRaidsInLog>
   <ShowDeadColonistsInLog>显示死亡的殖民者</ShowDeadColonistsInLog>
   <ShowIncidentsInLog>显示事件</ShowIncidentsInLog>
+  <!-- Incidents -->
+  <!-- Story log filters -->
 </LanguageData>

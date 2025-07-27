@@ -11,7 +11,7 @@ internal class Breakup : IEvent
     private Date date;
     private Pawn pawn1, pawn2;
     private Thought thought;
-    private List<int> yearsWhenEventStarted = new List<int>();
+    private List<int> yearsWhenEventStarted = [];
 
     public Breakup()
     {

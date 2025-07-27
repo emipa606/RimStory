@@ -10,13 +10,13 @@ public static class Resources
 {
     public static Map TEST_MAP;
 
-    public static readonly Random rng = new Random();
+    public static readonly Random rng = new();
     public static readonly int randomChanceRaid = 6;
 
 
     public static int xxx;
     public static int yyy;
-    public static Vector2 vect = new Vector2(xxx, yyy);
+    public static Vector2 vect = new(xxx, yyy);
 
 
     public static readonly int minHour = 10;

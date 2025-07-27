@@ -45,4 +45,6 @@
   <ShowRaidsInLog>Razzien anzeigen</ShowRaidsInLog>
   <ShowDeadColonistsInLog>Tote Kolonisten anzeigen</ShowDeadColonistsInLog>
   <ShowIncidentsInLog>Vorfälle anzeigen</ShowIncidentsInLog>
+  <!-- Incidents -->
+  <!-- Story log filters -->
 </LanguageData>

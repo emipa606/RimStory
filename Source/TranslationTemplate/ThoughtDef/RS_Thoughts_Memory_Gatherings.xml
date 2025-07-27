@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: attended anniversary -->
+  <RS_AttendedAnniversary.stages.attended_anniversary.label>attended anniversary</RS_AttendedAnniversary.stages.attended_anniversary.label>
+  <!-- EN: That was important day for our colony. -->
+  <RS_AttendedAnniversary.stages.attended_anniversary.description>That was important day for our colony.</RS_AttendedAnniversary.stages.attended_anniversary.description>
+  <!-- EN: attended funeral -->
+  <RS_AttendedFuneral.stages.attended_funeral.label>attended funeral</RS_AttendedFuneral.stages.attended_funeral.label>
+  <!-- EN: Rest in peace. -->
+  <RS_AttendedFuneral.stages.attended_funeral.description>Rest in peace.</RS_AttendedFuneral.stages.attended_funeral.description>
+  <!-- EN: attended memorial day -->
+  <RS_AttendedMemorialDay.stages.attended_memorial_day.label>attended memorial day</RS_AttendedMemorialDay.stages.attended_memorial_day.label>
+  <!-- EN: It's good to remember our fallen brothers and sisters. -->
+  <RS_AttendedMemorialDay.stages.attended_memorial_day.description>It's good to remember our fallen brothers and sisters.</RS_AttendedMemorialDay.stages.attended_memorial_day.description>
+  <!-- EN: attended our anniversary -->
+  <RS_AttendedOurAnniversary.stages.attended_our_anniversary.label>attended our anniversary</RS_AttendedOurAnniversary.stages.attended_our_anniversary.label>
+  <!-- EN: That was such important day of my life! -->
+  <RS_AttendedOurAnniversary.stages.attended_our_anniversary.description>That was such important day of my life!</RS_AttendedOurAnniversary.stages.attended_our_anniversary.description>
+</LanguageData>

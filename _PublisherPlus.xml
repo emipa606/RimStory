@@ -3,6 +3,9 @@
   <Excluded>
     <exclude>E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimStory\.gitignore</exclude>
     <exclude>E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimStory\.git</exclude>
+    <exclude>E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimStory\.gitmodules</exclude>
+    <exclude>E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimStory\.gitattributes</exclude>
+    <exclude>E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimStory\.github</exclude>
     <exclude>E:\SteamLibrary\steamapps\common\RimWorld\Mods\RimStory\Source</exclude>
   </Excluded>
 </Configuration>

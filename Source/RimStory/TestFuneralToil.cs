@@ -7,7 +7,7 @@ namespace RimStory;
 
 internal class TestFuneralToil : LordToil
 {
-    public static readonly IntVec3 OtherFianceNoMarriageSpotCellOffset = new IntVec3(-1, 0, 0);
+    public static readonly IntVec3 OtherFianceNoMarriageSpotCellOffset = new(-1, 0, 0);
 
     private readonly Pawn firstPawn;
 
@@ -23,7 +23,7 @@ internal class TestFuneralToil : LordToil
         data = new LordToilData_MarriageCeremony();
     }
 
-    public LordToilData_MarriageCeremony Data => (LordToilData_MarriageCeremony)data;
+    private LordToilData_MarriageCeremony Data => (LordToilData_MarriageCeremony)data;
 
     public override void Init()
     {
@@ -73,7 +73,7 @@ internal class TestFuneralToil : LordToil
         return p == firstPawn || p == secondPawn;
     }
 
-    public IntVec3 FianceStandingSpotFor(Pawn pawn)
+    private IntVec3 FianceStandingSpotFor(Pawn pawn)
     {
         Pawn pawn2;
         if (firstPawn == pawn)

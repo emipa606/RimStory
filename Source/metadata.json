@@ -2,10 +2,17 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "0",
-  "PreviewVersion": "1.5",
+  "PreviewVersion": "1.6",
   "SocialImageSet": true,
   "SearchTags": [
     " events",
     " memories"
-  ]
+  ],
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 65436,
+  "LinesOfXML": 7155,
+  "CodeBaseSize": 77,
+  "LastXmlCleaning": "2025-07-27T18:50:58.0938195+02:00"
 }

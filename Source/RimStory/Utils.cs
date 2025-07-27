@@ -10,10 +10,10 @@ public static class Utils
     public static int CurrentDay()
     {
         Vector2 vector;
-        switch (WorldRendererUtility.WorldRenderedNow)
+        switch (WorldRendererUtility.WorldRendered)
         {
-            case true when Find.WorldSelector.selectedTile >= 0:
-                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.selectedTile);
+            case true when Find.WorldSelector.SelectedTile >= 0:
+                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.SelectedTile);
                 break;
             case true when Find.WorldSelector.NumSelectedObjects > 0:
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
@@ -38,10 +38,10 @@ public static class Utils
     public static int CurrentHour()
     {
         Vector2 vector;
-        switch (WorldRendererUtility.WorldRenderedNow)
+        switch (WorldRendererUtility.WorldRendered)
         {
-            case true when Find.WorldSelector.selectedTile >= 0:
-                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.selectedTile);
+            case true when Find.WorldSelector.SelectedTile >= 0:
+                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.SelectedTile);
                 break;
             case true when Find.WorldSelector.NumSelectedObjects > 0:
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
@@ -66,10 +66,10 @@ public static class Utils
     public static Quadrum CurrentQuadrum()
     {
         Vector2 vector;
-        switch (WorldRendererUtility.WorldRenderedNow)
+        switch (WorldRendererUtility.WorldRendered)
         {
-            case true when Find.WorldSelector.selectedTile >= 0:
-                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.selectedTile);
+            case true when Find.WorldSelector.SelectedTile >= 0:
+                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.SelectedTile);
                 break;
             case true when Find.WorldSelector.NumSelectedObjects > 0:
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
@@ -93,10 +93,10 @@ public static class Utils
     public static int CurrentYear()
     {
         Vector2 vector;
-        switch (WorldRendererUtility.WorldRenderedNow)
+        switch (WorldRendererUtility.WorldRendered)
         {
-            case true when Find.WorldSelector.selectedTile >= 0:
-                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.selectedTile);
+            case true when Find.WorldSelector.SelectedTile >= 0:
+                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.SelectedTile);
                 break;
             case true when Find.WorldSelector.NumSelectedObjects > 0:
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
@@ -121,10 +121,10 @@ public static class Utils
     public static Date CurrentDate()
     {
         Vector2 vector;
-        switch (WorldRendererUtility.WorldRenderedNow)
+        switch (WorldRendererUtility.WorldRendered)
         {
-            case true when Find.WorldSelector.selectedTile >= 0:
-                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.selectedTile);
+            case true when Find.WorldSelector.SelectedTile >= 0:
+                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.SelectedTile);
                 break;
             case true when Find.WorldSelector.NumSelectedObjects > 0:
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
@@ -145,10 +145,10 @@ public static class Utils
         var day = GenDate.DayOfSeason(num, vector.x) + 1;
 
 
-        switch (WorldRendererUtility.WorldRenderedNow)
+        switch (WorldRendererUtility.WorldRendered)
         {
-            case true when Find.WorldSelector.selectedTile >= 0:
-                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.selectedTile);
+            case true when Find.WorldSelector.SelectedTile >= 0:
+                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.SelectedTile);
                 break;
             case true when Find.WorldSelector.NumSelectedObjects > 0:
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
@@ -168,10 +168,10 @@ public static class Utils
         var num2 = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
         var quadrum = GenDate.Quadrum(num2, vector.x);
 
-        switch (WorldRendererUtility.WorldRenderedNow)
+        switch (WorldRendererUtility.WorldRendered)
         {
-            case true when Find.WorldSelector.selectedTile >= 0:
-                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.selectedTile);
+            case true when Find.WorldSelector.SelectedTile >= 0:
+                vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.SelectedTile);
                 break;
             case true when Find.WorldSelector.NumSelectedObjects > 0:
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
