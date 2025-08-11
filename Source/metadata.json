@@ -11,8 +11,8 @@
   "Patches": false,
   "Defs": true,
   "Assemblies": true,
-  "LinesOfCode": 65436,
+  "LinesOfCode": 65377,
   "LinesOfXML": 7155,
-  "CodeBaseSize": 77,
-  "LastXmlCleaning": "2025-07-27T18:50:58.0938195+02:00"
+  "CodeBaseSize": 76,
+  "LastXmlCleaning": "2025-08-11T18:54:52.1929352+02:00"
 }
