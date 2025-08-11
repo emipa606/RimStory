@@ -36,7 +36,5 @@ internal class IncidentWorker_TryExecute
                 Resources.eventsLog.Add(new IncidentShort(Utils.CurrentDate(), $"RS_{__instance.def.defName}"));
                 break;
         }
-
-        Log.Warning(__instance.def.defName);
     }
 }
