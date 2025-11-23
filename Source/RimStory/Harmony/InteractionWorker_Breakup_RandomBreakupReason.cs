@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace RimStory.Harmony;
+namespace RimStory;
 
 [HarmonyPatch(typeof(InteractionWorker_Breakup), nameof(InteractionWorker_Breakup.RandomBreakupReason))]
 internal class InteractionWorker_Breakup_RandomBreakupReason

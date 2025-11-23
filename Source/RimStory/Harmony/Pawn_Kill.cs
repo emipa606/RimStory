@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Verse;
 
-namespace RimStory.Harmony;
+namespace RimStory;
 
 [HarmonyPatch(typeof(Pawn), nameof(Pawn.Kill))]
 internal class Pawn_Kill
