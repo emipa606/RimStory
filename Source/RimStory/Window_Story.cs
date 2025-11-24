@@ -7,19 +7,19 @@ namespace RimStory;
 
 internal class Window_Story : MainTabWindow
 {
+
+    private static readonly int defaultLogSize = 200;
     private static readonly int sie = 0;
     private static Vector2 vect = new(sie, sie);
     public static Vector2 logSize;
-
-    private static readonly int defaultLogSize = 200;
-    private readonly Listing_Standard listing_Standard = new();
-
-    private readonly Texture2D texDelete = ContentFinder<Texture2D>.Get("ui/buttons/Delete");
     private Rect bigRect;
     private string customText = "";
     private Rect filterRect;
     private Rect inner;
+    private readonly Listing_Standard listing_Standard = new();
     private Rect outter;
+
+    private readonly Texture2D texDelete = ContentFinder<Texture2D>.Get("ui/buttons/Delete");
 
     public override void DoWindowContents(Rect rect)
     {

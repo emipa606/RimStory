@@ -23,6 +23,11 @@ internal class AMemorialDay : IEvent
         this.deadPawn = deadPawn;
     }
 
+    private void AddAttendedMemorialDay(Pawn pawn)
+    {
+        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedMemorialDay);
+    }
+
     public Date Date()
     {
         return date;
@@ -110,10 +115,5 @@ internal class AMemorialDay : IEvent
         Find.LetterStack.ReceiveLetter("AMemorialDayLetter".Translate(), "AMemorialDayDesc".Translate(),
             LetterDefOf.PositiveEvent);
         return true;
-    }
-
-    private void AddAttendedMemorialDay(Pawn pawn)
-    {
-        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedMemorialDay);
     }
 }

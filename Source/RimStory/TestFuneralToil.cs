@@ -23,54 +23,11 @@ internal class TestFuneralToil : LordToil
         data = new LordToilData_MarriageCeremony();
     }
 
-    private LordToilData_MarriageCeremony Data => (LordToilData_MarriageCeremony)data;
-
-    public override void Init()
+    private CellRect CalculateSpectateRect()
     {
-        base.Init();
-        Data.spectateRect = CalculateSpectateRect();
-        var allowedSides = SpectateRectSide.All;
-        if (Data.spectateRect.Width > Data.spectateRect.Height)
-        {
-            allowedSides = SpectateRectSide.Vertical;
-        }
-        else if (Data.spectateRect.Height > Data.spectateRect.Width)
-        {
-            allowedSides = SpectateRectSide.Horizontal;
-        }
-
-        Data.spectateRectAllowedSides =
-            SpectatorCellFinder.FindSingleBestSide(Data.spectateRect, Map, allowedSides);
-    }
-
-    public override ThinkTreeDutyHook VoluntaryJoinDutyHookFor(Pawn p)
-    {
-        return IsFiance(p) ? DutyDefOf.MarryPawn.hook : DutyDefOf.Spectate.hook;
-    }
-
-    public override void UpdateAllDuties()
-    {
-        foreach (var pawn in lord.ownedPawns)
-        {
-            if (IsFiance(pawn))
-            {
-                pawn.mindState.duty = new PawnDuty(DutyDefOf.MarryPawn, FianceStandingSpotFor(pawn));
-            }
-            else
-            {
-                var pawnDuty = new PawnDuty(DutyDefOf.Spectate)
-                {
-                    spectateRect = Data.spectateRect,
-                    spectateRectAllowedSides = Data.spectateRectAllowedSides
-                };
-                pawn.mindState.duty = pawnDuty;
-            }
-        }
-    }
-
-    private bool IsFiance(Pawn p)
-    {
-        return p == firstPawn || p == secondPawn;
+        var first = FianceStandingSpotFor(firstPawn);
+        var second = FianceStandingSpotFor(secondPawn);
+        return CellRect.FromLimits(first, second);
     }
 
     private IntVec3 FianceStandingSpotFor(Pawn pawn)
@@ -104,11 +61,6 @@ internal class TestFuneralToil : LordToil
         return spot + LordToil_MarriageCeremony.OtherFianceNoMarriageSpotCellOffset;
     }
 
-    private Thing GetMarriageSpotAt(IntVec3 cell)
-    {
-        return cell.GetThingList(Map).Find(x => x.def == ThingDefOf.MarriageSpot);
-    }
-
     private IntVec3 FindCellForOtherPawnAtMarriageSpot(IntVec3 cell)
     {
         var marriageSpotAt = GetMarriageSpotAt(cell);
@@ -128,10 +80,58 @@ internal class TestFuneralToil : LordToil
         return IntVec3.Invalid;
     }
 
-    private CellRect CalculateSpectateRect()
+    private Thing GetMarriageSpotAt(IntVec3 cell)
     {
-        var first = FianceStandingSpotFor(firstPawn);
-        var second = FianceStandingSpotFor(secondPawn);
-        return CellRect.FromLimits(first, second);
+        return cell.GetThingList(Map).Find(x => x.def == ThingDefOf.MarriageSpot);
+    }
+
+    private bool IsFiance(Pawn p)
+    {
+        return p == firstPawn || p == secondPawn;
+    }
+
+    private LordToilData_MarriageCeremony Data => (LordToilData_MarriageCeremony)data;
+
+    public override void Init()
+    {
+        base.Init();
+        Data.spectateRect = CalculateSpectateRect();
+        var allowedSides = SpectateRectSide.All;
+        if (Data.spectateRect.Width > Data.spectateRect.Height)
+        {
+            allowedSides = SpectateRectSide.Vertical;
+        }
+        else if (Data.spectateRect.Height > Data.spectateRect.Width)
+        {
+            allowedSides = SpectateRectSide.Horizontal;
+        }
+
+        Data.spectateRectAllowedSides =
+            SpectatorCellFinder.FindSingleBestSide(Data.spectateRect, Map, allowedSides);
+    }
+
+    public override void UpdateAllDuties()
+    {
+        foreach (var pawn in lord.ownedPawns)
+        {
+            if (IsFiance(pawn))
+            {
+                pawn.mindState.duty = new PawnDuty(DutyDefOf.MarryPawn, FianceStandingSpotFor(pawn));
+            }
+            else
+            {
+                var pawnDuty = new PawnDuty(DutyDefOf.Spectate)
+                {
+                    spectateRect = Data.spectateRect,
+                    spectateRectAllowedSides = Data.spectateRectAllowedSides
+                };
+                pawn.mindState.duty = pawnDuty;
+            }
+        }
+    }
+
+    public override ThinkTreeDutyHook VoluntaryJoinDutyHookFor(Pawn p)
+    {
+        return IsFiance(p) ? DutyDefOf.MarryPawn.hook : DutyDefOf.Spectate.hook;
     }
 }

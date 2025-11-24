@@ -1,5 +1,9 @@
 # Changelog for RimStory
 
+1.6.2 - Removed HugsLib prereq, thanks Zaljerem!
+Used DeepL to update translations for ChineseSimplified, French, German, Japanese, Polish, Russian, Spanish
+
+
 1.6.1 - Removed extra logging
 
 

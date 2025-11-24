@@ -9,25 +9,6 @@ internal class ThinkNode_ConditionalFuneral : ThinkNode_Priority
 {
     public ThinkTreeDutyHook dutyHook;
 
-    public override ThinkNode DeepCopy(bool resolve = true)
-    {
-        var thinkNode_JoinVoluntarilyJoinableLord = (ThinkNode_JoinVoluntarilyJoinableLord)base.DeepCopy(resolve);
-        thinkNode_JoinVoluntarilyJoinableLord.dutyHook = dutyHook;
-        return thinkNode_JoinVoluntarilyJoinableLord;
-    }
-
-    public override ThinkResult TryIssueJobPackage(Pawn pawn, JobIssueParams jobParams)
-    {
-        CheckLeaveCurrentVoluntarilyJoinableLord(pawn);
-        JoinVoluntarilyJoinableLord(pawn);
-        if (pawn.GetLord() != null && (pawn.mindState.duty == null || pawn.mindState.duty.def.hook == dutyHook))
-        {
-            return base.TryIssueJobPackage(pawn, jobParams);
-        }
-
-        return ThinkResult.NoJob;
-    }
-
     private void CheckLeaveCurrentVoluntarilyJoinableLord(Pawn pawn)
     {
         var lord = pawn.GetLord();
@@ -95,5 +76,24 @@ internal class ThinkNode_ConditionalFuneral : ThinkNode_Priority
         lord?.Notify_PawnLost(pawn, PawnLostCondition.LeftVoluntarily);
 
         lord2.AddPawn(pawn);
+    }
+
+    public override ThinkNode DeepCopy(bool resolve = true)
+    {
+        var thinkNode_JoinVoluntarilyJoinableLord = (ThinkNode_JoinVoluntarilyJoinableLord)base.DeepCopy(resolve);
+        thinkNode_JoinVoluntarilyJoinableLord.dutyHook = dutyHook;
+        return thinkNode_JoinVoluntarilyJoinableLord;
+    }
+
+    public override ThinkResult TryIssueJobPackage(Pawn pawn, JobIssueParams jobParams)
+    {
+        CheckLeaveCurrentVoluntarilyJoinableLord(pawn);
+        JoinVoluntarilyJoinableLord(pawn);
+        if (pawn.GetLord() != null && (pawn.mindState.duty == null || pawn.mindState.duty.def.hook == dutyHook))
+        {
+            return base.TryIssueJobPackage(pawn, jobParams);
+        }
+
+        return ThinkResult.NoJob;
     }
 }

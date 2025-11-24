@@ -1,6 +1,6 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
-using RimWorld;
 using Verse;
 using Verse.AI.Group;
 
@@ -116,9 +116,5 @@ internal class ABigThreat : IEvent
         string text = "DayOfVictoryDesc".Translate(faction.Name, date.ToString());
         Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.PositiveEvent);
         return true;
-    }
-
-    private void AddAttendedMemorialDay()
-    {
     }
 }

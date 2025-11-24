@@ -22,6 +22,11 @@ internal class ADead : IEvent
         this.deadPawn = deadPawn;
     }
 
+    private void AddDeadOfRelativeThoughts(Pawn pawn)
+    {
+        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedMemorialDay);
+    }
+
     public Date Date()
     {
         return date;
@@ -123,10 +128,5 @@ internal class ADead : IEvent
         }
 
         return true;
-    }
-
-    private void AddDeadOfRelativeThoughts(Pawn pawn)
-    {
-        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedMemorialDay);
     }
 }

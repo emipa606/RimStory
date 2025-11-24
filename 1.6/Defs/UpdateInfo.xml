@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="RimStory_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2601386195</linkUrl>
+		<banner>UpdateInfo/RimStory</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="RimStory_UpdateInfoBase" MayRequire="neronix17.toolbox">
+		<defName>RimStory_1_6_1</defName>
+		<date>2025/11/24</date>
+		<content>This update of the mod removes the need for HugsLib, thanks to Zaljerem!</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+

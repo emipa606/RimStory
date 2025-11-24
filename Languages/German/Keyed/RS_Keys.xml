@@ -47,4 +47,6 @@
   <ShowIncidentsInLog>Vorfälle anzeigen</ShowIncidentsInLog>
   <!-- Incidents -->
   <!-- Story log filters -->
+  <RS_ModName>RimStory (Fortsetzung)</RS_ModName>
+  <RS_LOGRESET>LOG RESET? LOG RÜCKSETZEN? LOG RÜCKSTELLUNG?</RS_LOGRESET>
 </LanguageData>

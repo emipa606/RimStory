@@ -23,9 +23,22 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
         this.organizer = organizer;
     }
 
-    public override bool AllowStartNewGatherings => false;
+    private bool IsInvited(Pawn p)
+    {
+        return lord.faction != null && p.Faction == lord.faction;
+    }
 
-    public Pawn Organizer => organizer;
+    private bool IsPartyAboutToEnd()
+    {
+        return timeoutTrigger.TicksLeft < 1200;
+    }
+
+    private bool ShouldBeCalledOff()
+    {
+        //return !PartyUtility.AcceptableGameConditionsToContinueParty(base.Map) || (!this.spot.Roofed(base.Map) && !JoyUtility.EnjoyableOutsideNow(base.Map, null));
+        return !GatheringsUtility.AcceptableGameConditionsToContinueGathering(Map) ||
+               !spot.Roofed(Map) && !JoyUtility.EnjoyableOutsideNow(Map);
+    }
 
     public override StateGraph CreateGraph()
     {
@@ -55,11 +68,15 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
         return stateGraph;
     }
 
-    private bool ShouldBeCalledOff()
+    public override void ExposeData()
     {
-        //return !PartyUtility.AcceptableGameConditionsToContinueParty(base.Map) || (!this.spot.Roofed(base.Map) && !JoyUtility.EnjoyableOutsideNow(base.Map, null));
-        return !GatheringsUtility.AcceptableGameConditionsToContinueGathering(Map) ||
-               !spot.Roofed(Map) && !JoyUtility.EnjoyableOutsideNow(Map);
+        Scribe_Values.Look(ref spot, "spot");
+        Scribe_References.Look(ref organizer, "organizer");
+    }
+
+    public override string GetReport(Pawn pawn)
+    {
+        return "Attending funeral";
     }
 
     public override float VoluntaryJoinPriorityFor(Pawn p)
@@ -89,24 +106,7 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
         return VoluntarilyJoinableLordJobJoinPriorities.SocialGathering;
     }
 
-    public override void ExposeData()
-    {
-        Scribe_Values.Look(ref spot, "spot");
-        Scribe_References.Look(ref organizer, "organizer");
-    }
+    public override bool AllowStartNewGatherings => false;
 
-    public override string GetReport(Pawn pawn)
-    {
-        return "Attending funeral";
-    }
-
-    private bool IsPartyAboutToEnd()
-    {
-        return timeoutTrigger.TicksLeft < 1200;
-    }
-
-    private bool IsInvited(Pawn p)
-    {
-        return lord.faction != null && p.Faction == lord.faction;
-    }
+    public Pawn Organizer => organizer;
 }

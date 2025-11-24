@@ -47,4 +47,6 @@
   <ShowIncidentsInLog>显示事件</ShowIncidentsInLog>
   <!-- Incidents -->
   <!-- Story log filters -->
+  <RS_ModName>环游世界（续）</RS_ModName>
+  <RS_LOGRESET>日志重置？日志重置？日志重置？</RS_LOGRESET>
 </LanguageData>

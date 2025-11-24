@@ -29,19 +29,6 @@ internal class LordToil_Funeral : LordToil
 
     private LordToilData_Gathering Data => (LordToilData_Gathering)data;
 
-    public override ThinkTreeDutyHook VoluntaryJoinDutyHookFor(Pawn p)
-    {
-        return DefDatabase<DutyDef>.GetNamed("Funeral").hook;
-    }
-
-    public override void UpdateAllDuties()
-    {
-        foreach (var pawn in lord.ownedPawns)
-        {
-            pawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamedSilentFail("Party"), spot);
-        }
-    }
-
     public override void LordToilTick()
     {
         //TODO test
@@ -76,5 +63,18 @@ internal class LordToil_Funeral : LordToil
                 }
             }
         }
+    }
+
+    public override void UpdateAllDuties()
+    {
+        foreach (var pawn in lord.ownedPawns)
+        {
+            pawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamedSilentFail("Party"), spot);
+        }
+    }
+
+    public override ThinkTreeDutyHook VoluntaryJoinDutyHookFor(Pawn p)
+    {
+        return DefDatabase<DutyDef>.GetNamed("Funeral").hook;
     }
 }

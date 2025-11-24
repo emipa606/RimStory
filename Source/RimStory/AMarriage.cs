@@ -25,6 +25,16 @@ internal class AMarriage : IEvent
         this.pawn2 = pawn2;
     }
 
+    private void AddAttendedAnniversaryThoughts(Pawn pawn)
+    {
+        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedAnniversary);
+    }
+
+    private void AddAttendedOurAnniversaryThoughts(Pawn pawn)
+    {
+        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedOurAnniversary);
+    }
+
     public Date Date()
     {
         return date;
@@ -132,15 +142,5 @@ internal class AMarriage : IEvent
         }
 
         return true;
-    }
-
-    private void AddAttendedAnniversaryThoughts(Pawn pawn)
-    {
-        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedAnniversary);
-    }
-
-    private void AddAttendedOurAnniversaryThoughts(Pawn pawn)
-    {
-        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedOurAnniversary);
     }
 }

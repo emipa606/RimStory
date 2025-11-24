@@ -29,6 +29,11 @@ internal class CustomEvent : IEvent
         active = false;
     }
 
+    bool IEvent.GetIsAnniversary()
+    {
+        throw new NotImplementedException();
+    }
+
     bool IEvent.IsStillEvent()
     {
         return active;
@@ -37,12 +42,6 @@ internal class CustomEvent : IEvent
     string IEvent.ShowInLog()
     {
         return $"[{date.day} {date.quadrum} {date.year}] {text}";
-    }
-
-    void IExposable.ExposeData()
-    {
-        Scribe_Deep.Look(ref date, "RS_DateEvent");
-        Scribe_Values.Look(ref text, "RS_TextEvent");
     }
 
     bool IEvent.TryStartEvent()
@@ -55,8 +54,9 @@ internal class CustomEvent : IEvent
         throw new NotImplementedException();
     }
 
-    bool IEvent.GetIsAnniversary()
+    void IExposable.ExposeData()
     {
-        throw new NotImplementedException();
+        Scribe_Deep.Look(ref date, "RS_DateEvent");
+        Scribe_Values.Look(ref text, "RS_TextEvent");
     }
 }

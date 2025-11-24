@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="RimStory_UpdateFeatureBase">
+		<modNameReadable>RimStory</modNameReadable>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2601386195</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="RimStory_UpdateFeatureBase">
+		<defName>RimStory_1_6_1</defName>
+		<assemblyVersion>1.6.1</assemblyVersion>
+		<content>This update of the mod removes the need for HugsLib, thanks to Zaljerem!</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
+

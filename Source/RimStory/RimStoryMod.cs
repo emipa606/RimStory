@@ -9,9 +9,9 @@ namespace RimStory;
 
 internal class RimStoryMod : Mod
 {
-    public static RimStorySettings settings;
     private static string currentVersion;
-    
+    public static RimStorySettings settings;
+
 
     public RimStoryMod(ModContentPack content) : base(content)
     {
@@ -21,7 +21,7 @@ internal class RimStoryMod : Mod
 
         new Harmony("mlie.rimstory").PatchAll();
 
-    }    
+    }
 
     public override void DoSettingsWindowContents(Rect inRect)
     {

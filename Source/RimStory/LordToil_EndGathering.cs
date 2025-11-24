@@ -4,9 +4,10 @@ namespace RimStory;
 
 internal class LordToil_EndGathering : LordToil
 {
-    public override bool ShouldFail => true;
 
     public override void UpdateAllDuties()
     {
     }
+
+    public override bool ShouldFail => true;
 }
