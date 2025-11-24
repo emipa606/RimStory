@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace RimStory.Harmony;
+namespace RimStory;
 
 [HarmonyPatch(typeof(InteractionWorker_RecruitAttempt), nameof(InteractionWorker_RecruitAttempt.DoRecruit),
     typeof(Pawn), typeof(Pawn), typeof(bool))]

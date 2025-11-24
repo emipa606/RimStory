@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace RimStory.Harmony;
+namespace RimStory;
 
 [HarmonyPatch(typeof(VoluntarilyJoinableLordsStarter),
     nameof(VoluntarilyJoinableLordsStarter.TryStartMarriageCeremony))]
