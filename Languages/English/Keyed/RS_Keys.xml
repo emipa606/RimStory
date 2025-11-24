@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+
+  <RS_ModName>RimStory (Continued)</RS_ModName>
+<RS_LOGRESET>LOG RESET? LOG RESET? LOG RESET?</RS_LOGRESET>
+
   <ColonyAttacked>{0} attacked your colony. </ColonyAttacked>
   <DayOfVictory>Day of {0} defeat.</DayOfVictory>
   <DayOfVictoryDesc>Your colonists are celebrating {0}'s defeat on\n\n {1}</DayOfVictoryDesc>

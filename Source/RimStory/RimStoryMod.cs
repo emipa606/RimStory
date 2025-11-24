@@ -1,5 +1,6 @@
 ﻿//using SettingsHelper;
 
+using HarmonyLib;
 using Mlie;
 using UnityEngine;
 using Verse;
@@ -10,13 +11,17 @@ internal class RimStoryMod : Mod
 {
     public static RimStorySettings settings;
     private static string currentVersion;
+    
 
     public RimStoryMod(ModContentPack content) : base(content)
     {
         settings = GetSettings<RimStorySettings>();
         currentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
-    }
+
+        new Harmony("mlie.rimstory").PatchAll();
+
+    }    
 
     public override void DoSettingsWindowContents(Rect inRect)
     {
@@ -31,7 +36,7 @@ internal class RimStoryMod : Mod
 
         if (Prefs.DevMode)
         {
-            listing_Standard.CheckboxLabeled("LOG RESET? LOG RESET? LOG RESET?", ref settings.ISLOGGONNARESET);
+            listing_Standard.CheckboxLabeled("RS_LOGRESET".Translate(), ref settings.ISLOGGONNARESET);
         }
 
         if (currentVersion != null)
@@ -48,6 +53,6 @@ internal class RimStoryMod : Mod
 
     public override string SettingsCategory()
     {
-        return "RimStory";
+        return "RS_ModName".Translate();
     }
 }

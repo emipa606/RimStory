@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 
-namespace RimStory.Harmony;
+namespace RimStory;
 
 [HarmonyPatch(typeof(IncidentWorker_RaidEnemy), "TryExecuteWorker")]
 internal class IncidentWorker_RaidEnemy_TryExecuteWorker

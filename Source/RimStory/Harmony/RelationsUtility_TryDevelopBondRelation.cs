@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace RimStory.Harmony;
+namespace RimStory;
 
 [HarmonyPatch(typeof(RelationsUtility), nameof(RelationsUtility.TryDevelopBondRelation))]
 internal class RelationsUtility_TryDevelopBondRelation
