@@ -6,9 +6,7 @@ namespace RimStory;
 
 internal class JobGiver_AttendFuneral : ThinkNode_JobGiver
 {
-
-
-    private Building_Grave FindGrave()
+    private static Building_Grave FindGrave()
     {
         return Resources.lastGrave;
     }
@@ -20,7 +18,7 @@ internal class JobGiver_AttendFuneral : ThinkNode_JobGiver
     }
 
 
-    public class RS_JobDefOf
+    private class RS_JobDefOf
     {
         public static JobDef AttendFuneral;
     }

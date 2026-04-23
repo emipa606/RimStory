@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using RimWorld.Planet;
+﻿using RimWorld.Planet;
 using Verse;
 
 namespace RimStory;
@@ -20,10 +19,12 @@ public class WorldComponent_RimStory : WorldComponent
     //addresses custom tick stuff
     public override void WorldComponentTick()
     {
-        if (RimStoryMod.settings.ISLOGGONNARESET)
+        if (!RimStoryMod.settings.ISLOGGONNARESET)
         {
-            Resources.eventsLog.Clear();
-            RimStoryMod.settings.ISLOGGONNARESET = false;
+            return;
         }
+
+        Resources.eventsLog.Clear();
+        RimStoryMod.settings.ISLOGGONNARESET = false;
     }
 }

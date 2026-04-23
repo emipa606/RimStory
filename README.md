@@ -9,6 +9,7 @@ https://github.com/m1st4x/RimStory
 
 - Spanish translation added, thanks El Bongo!
 - Updated Russian translation, thank you AndreyRGW!
+- As of 1.6 this mod no longer need HugsLib, thanks to Zaljerem!
 
 ![Image](https://img.litet.net/logos/Notice.png)
 	
@@ -132,4 +133,4 @@ Powered by Harmony (THANKS!).
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/RimStory?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2601386195) | tags:  events,  memories
+[![Image](https://img.shields.io/github/v/release/emipa606/RimStory?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2601386195) | tags: events, memories

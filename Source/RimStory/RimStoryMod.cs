@@ -1,5 +1,6 @@
 ﻿//using SettingsHelper;
 
+using System.Reflection;
 using HarmonyLib;
 using Mlie;
 using UnityEngine;
@@ -19,8 +20,7 @@ internal class RimStoryMod : Mod
         currentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
 
-        new Harmony("mlie.rimstory").PatchAll();
-
+        new Harmony("mlie.rimstory").PatchAll(Assembly.GetExecutingAssembly());
     }
 
     public override void DoSettingsWindowContents(Rect inRect)

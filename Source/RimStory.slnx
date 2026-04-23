@@ -6,4 +6,23 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="RimStory/RimStory.csproj" />
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/RS_Keys.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/">
+    <File Path="../1.6/Defs/UpdateInfo.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThinkTreeDefs/">
+    <File Path="../1.6/Defs/ThinkTreeDefs/ThinkTree_Gatherings.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThoughtDefs/">
+    <File Path="../1.6/Defs/ThoughtDefs/RS_Thoughts_Memory_Gatherings.xml" />
+    <File Path="../1.6/Defs/ThoughtDefs/RS_Thoughts.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/MainButtonDefs/">
+    <File Path="../1.6/Defs/MainButtonDefs/MainButtons.xml" />
+  </Folder>
 </Solution>

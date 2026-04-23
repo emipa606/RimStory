@@ -1,43 +1,44 @@
-# GitHub Copilot Instructions for RimStory (Continued)
+# Copilot Instructions for RimStory (Continued)
 
 ## Mod Overview and Purpose
-
-**RimStory (Continued)** is a storytelling mod for RimWorld aimed at enhancing the game's narrative aspect by logging important colony events. The mod records pivotal moments like deaths, marriages, epic battles, and failures to provide a rich historical context for your colony. Colonists will celebrate anniversaries, remember fallen comrades, and more, enriching the player's experience through stories and memories.
+RimStory is a mod for RimWorld designed to enrich the storytelling aspect of the game. It logs important events in a colony's life, such as deaths, marriages, epic battles, and failures. By doing so, it helps players remember the significant moments in their colonies and encourages deeper engagement with their pawns and their stories.
 
 ## Key Features and Systems
-
-- **Funerals**: Arrange funerals for deceased colonists, enhancing emotional connections within the colony.
-- **Marriages and Anniversaries**: Celebrate weddings and anniversaries, contributing to the colonists' happiness and interconnections.
-- **Memorial Day**: Commemorate critical events or fallen heroes who have left a mark on the colony.
-- **Great Victories**: Log and celebrate your colony's most significant triumphs.
-- **Individual Thoughts**: Colonists will form unique thoughts and perspectives based on events they experience.
+- **Funerals**: Host memorial services for fallen colonists.
+- **Marriage Anniversaries**: Celebrate the unions within your colony.
+- **Memorial Day**: Honor the memory of those lost on specific days.
+- **Days of Great Victory**: Commemorate significant battles and triumphs.
+- **Individual Thoughts**: Pawns reflect on personal and communal events.
+- **Anniversary Events**: Pawns organize celebrations to remember key dates.
+- **Compatibility**: RimStory is highly compatible with other mods but advises configuration settings to avoid redundant events when used with mods like Psychology and Days Matter.
 
 ## Coding Patterns and Conventions
-
-- **Class Structure**: The mod employs internal classes extensively, indicating a focus on modular and encapsulated design. Classes like `IncidentWorker`, `LordToil`, and `JobDriver` suggest the use of object-oriented principles to handle event-driven behaviors systematically.
-- **Namespace Use**: Ensure consistent and clear use of namespaces to organize classes logically.
-- **Interfaces and Inheritance**: Utilization of interfaces such as `IEvent` and inheritance from existing RimWorld classes (`JobDriver`, `LordToil`) indicate a pattern of leveraging existing game structures for seamless integration.
-- **Comments and Documentation**: Ensure methods and classes are well-documented with comments to facilitate understanding and future development.
+- **Class Structure**: All classes are internal by default unless they need wider access.
+- **Method Naming**: Follows C# naming conventions, with method names beginning in uppercase (e.g., `TryStartEvent`, `ExposeData`).
+- **Interface Implementation**: Uses interfaces like `IEvent` to define methods shared by multiple classes.
+- **Stateless Helpers**: Utilizes static classes for utility functions (`Utils`, `Resources`, etc.), promoting stateless designs.
 
 ## XML Integration
+- **Translation Support**: RimStory supports multiple languages through XML files. Contributors can submit translation files for new languages to be added.
+- **Event Definitions**: Event details and configurations may be defined in XML files, allowing for easy adjustments and additions without altering the codebase.
 
-- **Translations**: The mod supports multiple languages via XML files. Any new events or text should be integrated through XML to ensure localization support.
-- **Defs Handling**: Utilize XML for defining new events, thoughts, and incidents to maintain compatibility and ease updatability across game versions.
-  
 ## Harmony Patching
-
-- **Harmony Patching**: Ensure Harmony is properly set up and maintained within your project. This library is used to patch existing game code, allowing RimStory to append or modify behavior without altering original code.
-- **Patch Targets**: Focus on patching relevant RimWorld classes that handle event management, such as `Pawn_Kill` or `IncidentWorker`.
+- RimStory uses Harmony to safely modify the base game's functionalities without directly altering original game code.
+- Patches are targeted at specific RimWorld methods, ensuring compatibility and reducing code conflicts with other mods.
 
 ## Suggestions for Copilot
+1. **New Event Ideas**: Suggest adding new events that could be logged by the system, such as natural disasters, or first alien contact.
+2. **Performance Optimization**: Recommend code improvements that streamline data logging and event processing.
+3. **Code Refactoring**: Identify opportunities for abstracting common functionalities into base classes or interfaces to reduce code duplication.
+4. **Translation Integration**: Assist with adding translation capability by suggesting consistent XML structure and key naming conventions.
+5. **Harmony Patch Suggestions**: Provide insights on effective use of Harmony for patching game mechanics, recommending patches only when necessary.
 
-- Utilize Copilot for boilerplate code and repetitive tasks such as event logging and consistency checks.
-- Leverage Copilot for generating test methods or scenarios to ensure new features work as intended without breaking existing functionalities.
-- Use Copilot to draft XML files for new translations or event definitions.
-- Suggest code optimization opportunities, particularly for performance-sensitive areas where reflection and dynamic code execution are involved.
-- When patching new game mechanic code, utilize Copilot to automate the creation of reliable Harmony patches that minimize the risk of bugs and maintain compatibility.
+By following this guide and utilizing GitHub Copilot, contributors can effectively develop and expand the RimStory mod while maintaining code quality and compatibility.
 
-By adhering to these instructions and leveraging GitHub Copilot effectively, you can enhance the RimStory mod while ensuring maintainability and compatibility across future RimWorld updates. Collaborative development and user feedback will continue to shape and polish the storytelling experience within RimWorld's rich, dynamic world.
-
-
-This `.github/copilot-instructions.md` file should help guide contributors using GitHub Copilot, focusing on the specifics of mod development in RimWorld using C#.
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.

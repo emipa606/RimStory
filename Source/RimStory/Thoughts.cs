@@ -5,7 +5,6 @@ namespace RimStory;
 [DefOf]
 public static class Thoughts
 {
-
     public static ThoughtDef RS_AttendedAnniversary;
 
     public static ThoughtDef RS_AttendedFuneral;

@@ -119,6 +119,7 @@ https://github.com/m1st4x/RimStory
 
 - Spanish translation added, thanks El Bongo!
 - Updated Russian translation, thank you AndreyRGW!
+- As of 1.6 this mod no longer need HugsLib, thanks to Zaljerem!
 
 [img]https://img.litet.net/logos/Notice.png[/img]
 
@@ -249,6 +250,6 @@ Powered by Harmony (THANKS!).
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2601386195][img]https://img.shields.io/github/v/release/emipa606/RimStory?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  events,  memories</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2601386195][img]https://img.shields.io/github/v/release/emipa606/RimStory?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: events, memories</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 </ModMetaData>

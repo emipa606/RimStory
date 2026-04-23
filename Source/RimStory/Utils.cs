@@ -7,7 +7,6 @@ namespace RimStory;
 
 public static class Utils
 {
-
     public static Date CurrentDate()
     {
         Vector2 vector;
@@ -20,15 +19,15 @@ public static class Utils
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
                 break;
             default:
+            {
+                if (Find.CurrentMap == null)
                 {
-                    if (Find.CurrentMap == null)
-                    {
-                        return null;
-                    }
-
-                    vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
-                    break;
+                    return null;
                 }
+
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
+                break;
+            }
         }
 
         var num = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
@@ -44,15 +43,15 @@ public static class Utils
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
                 break;
             default:
+            {
+                if (Find.CurrentMap == null)
                 {
-                    if (Find.CurrentMap == null)
-                    {
-                        return null;
-                    }
-
-                    vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
-                    break;
+                    return null;
                 }
+
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
+                break;
+            }
         }
 
         var num2 = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
@@ -67,15 +66,15 @@ public static class Utils
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
                 break;
             default:
+            {
+                if (Find.CurrentMap == null)
                 {
-                    if (Find.CurrentMap == null)
-                    {
-                        return null;
-                    }
-
-                    vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
-                    break;
+                    return null;
                 }
+
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
+                break;
+            }
         }
 
         var num3 = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
@@ -85,6 +84,7 @@ public static class Utils
 
         return new Date(day, quadrum, year);
     }
+
     public static int CurrentDay()
     {
         Vector2 vector;
@@ -97,15 +97,15 @@ public static class Utils
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
                 break;
             default:
+            {
+                if (Find.CurrentMap == null)
                 {
-                    if (Find.CurrentMap == null)
-                    {
-                        return 0;
-                    }
-
-                    vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
-                    break;
+                    return 0;
                 }
+
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
+                break;
+            }
         }
 
         var num = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
@@ -125,15 +125,15 @@ public static class Utils
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
                 break;
             default:
+            {
+                if (Find.CurrentMap == null)
                 {
-                    if (Find.CurrentMap == null)
-                    {
-                        return 0;
-                    }
-
-                    vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
-                    break;
+                    return 0;
                 }
+
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
+                break;
+            }
         }
 
         var num = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
@@ -153,15 +153,15 @@ public static class Utils
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
                 break;
             default:
+            {
+                if (Find.CurrentMap == null)
                 {
-                    if (Find.CurrentMap == null)
-                    {
-                        return 0;
-                    }
-
-                    vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
-                    break;
+                    return 0;
                 }
+
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
+                break;
+            }
         }
 
         var num = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;
@@ -180,15 +180,15 @@ public static class Utils
                 vector = Find.WorldGrid.LongLatOf(Find.WorldSelector.FirstSelectedObject.Tile);
                 break;
             default:
+            {
+                if (Find.CurrentMap == null)
                 {
-                    if (Find.CurrentMap == null)
-                    {
-                        return 0;
-                    }
-
-                    vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
-                    break;
+                    return 0;
                 }
+
+                vector = Find.WorldGrid.LongLatOf(Find.CurrentMap.Tile);
+                break;
+            }
         }
 
         var num = Find.TickManager.gameStartAbsTick == 0 ? Find.TickManager.TicksGame : Find.TickManager.TicksAbs;

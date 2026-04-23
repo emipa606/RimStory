@@ -4,7 +4,7 @@ namespace RimStory;
 
 public class MapComponent_RimStory : MapComponent
 {
-    private int tickCounter = 0;
+    private int tickCounter;
 
     public MapComponent_RimStory(Map map) : base(map)
     {
@@ -14,7 +14,7 @@ public class MapComponent_RimStory : MapComponent
 
     private void RunMassFuneral()
     {
-        if(!RimStoryMod.settings.enableFunerals || Resources.deadPawnsForMassFuneralBuried.Count == 0)
+        if (!RimStoryMod.settings.enableFunerals || Resources.deadPawnsForMassFuneralBuried.Count == 0)
         {
             return;
         }
@@ -23,12 +23,12 @@ public class MapComponent_RimStory : MapComponent
         var now = Utils.CurrentDate();
 
         // Skip if a funeral has already happened today
-        if(lastDate != null && lastDate.day == now.day && lastDate.quadrum == now.quadrum && lastDate.year == now.year)
+        if (lastDate != null && lastDate.day == now.day && lastDate.quadrum == now.quadrum && lastDate.year == now.year)
         {
             return;
         }
 
-        if(!MassFuneral.TryStartMassFuneral(map))
+        if (!MassFuneral.TryStartMassFuneral(map))
         {
             return;
         }
@@ -39,25 +39,25 @@ public class MapComponent_RimStory : MapComponent
 
     private void RunScheduledEvents()
     {
-        if(Resources.events.Count == 0)
+        if (Resources.events.Count == 0)
         {
             return;
         }
 
-        foreach(var e in Resources.events)
+        foreach (var e in Resources.events)
         {
-            switch(e)
+            switch (e)
             {
                 case AMarriage when RimStoryMod.settings.enableMarriageAnniversary:
-                    case AMemorialDay when RimStoryMod.settings.enableMemoryDay:
-                    case ABigThreat when RimStoryMod.settings.enableDaysOfVictory:
-                    case ADead when RimStoryMod.settings.enableIndividualThoughts:
+                case AMemorialDay when RimStoryMod.settings.enableMemoryDay:
+                case ABigThreat when RimStoryMod.settings.enableDaysOfVictory:
+                case ADead when RimStoryMod.settings.enableIndividualThoughts:
                     e.TryStartEvent(map);
                     break;
             }
         }
 
-        foreach(var e in Resources.eventsToDelete)
+        foreach (var e in Resources.eventsToDelete)
         {
             Resources.events.Remove(e);
         }
@@ -72,10 +72,12 @@ public class MapComponent_RimStory : MapComponent
         tickCounter++;
 
         // Run roughly once per in-game hour (~2500 ticks)
-        if(tickCounter % 2500 == 0)
+        if (tickCounter % 2500 != 0)
         {
-            RunScheduledEvents();
-            RunMassFuneral();
+            return;
         }
+
+        RunScheduledEvents();
+        RunMassFuneral();
     }
 }

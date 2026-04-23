@@ -24,7 +24,7 @@ public class Saves(World world) : WorldComponent(world)
         Scribe_Values.Look(ref Window_Story.logSize, "RS_Window_Size");
 
         Scribe_Values.Look(ref Resources.showRaidsInLog, "RS_ShowRaidInLog", true);
-        Scribe_Values.Look(ref Resources.showRaidsInLog, "RS_ShowDeadColonistsInLog", true);
-        Scribe_Values.Look(ref Resources.showRaidsInLog, "RS_showIncidentsInLog", true);
+        Scribe_Values.Look(ref Resources.showDeadColonistsInLog, "RS_ShowDeadColonistsInLog", true);
+        Scribe_Values.Look(ref Resources.showIncidentsInLog, "RS_showIncidentsInLog", true);
     }
 }

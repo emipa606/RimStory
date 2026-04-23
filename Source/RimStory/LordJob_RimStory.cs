@@ -23,6 +23,10 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
         this.organizer = organizer;
     }
 
+    public override bool AllowStartNewGatherings => false;
+
+    public Pawn Organizer => organizer;
+
     private bool IsInvited(Pawn p)
     {
         return lord.faction != null && p.Faction == lord.faction;
@@ -105,8 +109,4 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
         //return VoluntarilyJoinableLordJobJoinPriorities.PartyGuest;
         return VoluntarilyJoinableLordJobJoinPriorities.SocialGathering;
     }
-
-    public override bool AllowStartNewGatherings => false;
-
-    public Pawn Organizer => organizer;
 }

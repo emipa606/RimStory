@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <ColonyAttacked>{0} zaatakowali twoją kolonię. </ColonyAttacked>
-  <DayOfVictory>Rocznica wygranej bitwy.</DayOfVictory>
+  <DayOfVictory>Dzień {0} porażki.</DayOfVictory>
   <DayOfVictoryDesc>Twoi koloniści celebrują zwycięstwo z {0} dnia \n\n {1}</DayOfVictoryDesc>
   <AMarriage>{0} oraz {1} zawarli małżeństwo.</AMarriage>
   <AMarriageLetter>Rocznica małżeństwa.</AMarriageLetter>
