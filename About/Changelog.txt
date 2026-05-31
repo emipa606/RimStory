@@ -1,5 +1,8 @@
 # Changelog for RimStory
 
+1.6.4 - Parties should be set in the evening instead
+
+
 1.6.3 - Events should now be shown correctly when loading a save
 Used DeepL to update translations for Polish
 

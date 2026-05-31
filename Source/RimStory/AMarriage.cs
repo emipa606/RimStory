@@ -86,7 +86,7 @@ internal class AMarriage : IEvent
         }
 
         if (Utils.CurrentDay() != date.day || Utils.CurrentQuadrum() != date.quadrum ||
-            Utils.CurrentHour() < Resources.minHour || Utils.CurrentHour() > Resources.maxHour ||
+            Utils.CurrentHour() < 10 || Utils.CurrentHour() > 20 ||
             Utils.CurrentYear() == date.year || !isThisYear)
         {
             return false;

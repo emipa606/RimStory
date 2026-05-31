@@ -26,10 +26,10 @@ public static class Resources
 
 
     public static Building_Grave lastGrave;
-    public static readonly int maxHour = 20;
+    public static readonly int maxHour = 23;
 
 
-    public static readonly int minHour = 10;
+    public static readonly int minHour = 18;
     public static List<Pawn> pawnsAttended = [];
     public static readonly int randomChanceRaid = 6;
 
