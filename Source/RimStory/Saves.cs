@@ -3,12 +3,10 @@ using Verse;
 
 namespace RimStory;
 
-//public class Saves : UtilityWorldObject
 public class Saves(World world) : WorldComponent(world)
 {
     public override void ExposeData()
     {
-        //base.ExposeData();
         Scribe_References.Look(ref Resources.lastGrave, "RS_LastGrave", true);
 
         Scribe_Collections.Look(ref Resources.events, "RS_Events", LookMode.Deep, null);

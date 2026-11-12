@@ -133,4 +133,4 @@ Powered by Harmony (THANKS!).
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/RimStory?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2601386195) | tags: events, memories
+[![Image](https://img.shields.io/github/v/release/emipa606/RimStory?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2601386195) | events, memories

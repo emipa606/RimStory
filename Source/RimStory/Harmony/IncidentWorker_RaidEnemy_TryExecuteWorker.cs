@@ -4,9 +4,9 @@ using RimWorld;
 namespace RimStory;
 
 [HarmonyPatch(typeof(IncidentWorker_RaidEnemy), "TryExecuteWorker")]
-internal class IncidentWorker_RaidEnemy_TryExecuteWorker
+internal static class IncidentWorker_RaidEnemy_TryExecuteWorker
 {
-    private static void Postfix(IncidentParms parms)
+    public static void Postfix(IncidentParms parms)
     {
         if (Resources.rng.Next(101) <= Resources.randomChanceRaid)
         {

@@ -5,9 +5,9 @@ using Verse;
 namespace RimStory;
 
 [HarmonyPatch(typeof(RelationsUtility), nameof(RelationsUtility.TryDevelopBondRelation))]
-internal class RelationsUtility_TryDevelopBondRelation
+internal static class RelationsUtility_TryDevelopBondRelation
 {
-    private static void Postfix(bool __result, ref Pawn humanlike, ref Pawn animal)
+    public static void Postfix(bool __result, ref Pawn humanlike, ref Pawn animal)
     {
         if (!__result)
         {

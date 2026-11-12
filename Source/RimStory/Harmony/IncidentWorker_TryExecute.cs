@@ -4,9 +4,9 @@ using RimWorld;
 namespace RimStory;
 
 [HarmonyPatch(typeof(IncidentWorker), nameof(IncidentWorker.TryExecute))]
-internal class IncidentWorker_TryExecute
+internal static class IncidentWorker_TryExecute
 {
-    private static void Postfix(IncidentWorker __instance, bool __result)
+    public static void Postfix(IncidentWorker __instance, bool __result)
     {
         if (!__result)
         {

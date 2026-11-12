@@ -18,7 +18,6 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
 
     public LordJob_RimStory(IntVec3 spot, Pawn organizer)
     {
-        //this.spot = spot;
         this.spot = Resources.lastGrave.Position;
         this.organizer = organizer;
     }
@@ -39,7 +38,6 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
 
     private bool ShouldBeCalledOff()
     {
-        //return !PartyUtility.AcceptableGameConditionsToContinueParty(base.Map) || (!this.spot.Roofed(base.Map) && !JoyUtility.EnjoyableOutsideNow(base.Map, null));
         return !GatheringsUtility.AcceptableGameConditionsToContinueGathering(Map) ||
                !spot.Roofed(Map) && !JoyUtility.EnjoyableOutsideNow(Map);
     }
@@ -58,7 +56,6 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
 
         transition.AddTrigger(new Trigger_TickCondition(ShouldBeCalledOff));
         transition.AddTrigger(new Trigger_PawnLostViolently());
-        //transition.AddPreAction(new TransitionAction_Message("Funeral called off.", MessageTypeDefOf.NegativeEvent, new TargetInfo(this.spot, base.Map, false)));
         transition.AddPreAction(new TransitionAction_Message("FuneralCalledOff".Translate(),
             MessageTypeDefOf.NegativeEvent, new TargetInfo(spot, Map)));
         stateGraph.AddTransition(transition);
@@ -67,7 +64,6 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
         transition2.AddTrigger(timeoutTrigger);
         transition2.AddPreAction(new TransitionAction_Message("FuneralFinished".Translate(),
             MessageTypeDefOf.SituationResolved, new TargetInfo(spot, Map)));
-        //transition2.AddPreAction(new TransitionAction_Message("Funeral finished.", MessageTypeDefOf.SituationResolved, new TargetInfo(this.spot, base.Map, false)));
         stateGraph.AddTransition(transition2);
         return stateGraph;
     }
@@ -90,7 +86,6 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
             return 0f;
         }
 
-        //if (!PartyUtility.ShouldPawnKeepPartying(p))
         if (GatheringsUtility.ShouldPawnKeepGathering(p, GatheringDefOf.Party))
         {
             return 0f;
@@ -106,7 +101,6 @@ internal class LordJob_RimStory : LordJob_VoluntarilyJoinable
             return 0f;
         }
 
-        //return VoluntarilyJoinableLordJobJoinPriorities.PartyGuest;
         return VoluntarilyJoinableLordJobJoinPriorities.SocialGathering;
     }
 }

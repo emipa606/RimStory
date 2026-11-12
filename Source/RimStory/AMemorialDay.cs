@@ -23,11 +23,6 @@ internal class AMemorialDay : IEvent
         this.deadPawn = deadPawn;
     }
 
-    private void AddAttendedMemorialDay(Pawn pawn)
-    {
-        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedMemorialDay);
-    }
-
     public Date Date()
     {
         return date;
@@ -59,13 +54,11 @@ internal class AMemorialDay : IEvent
     {
         if (deadPawn != null)
         {
-            //return (date.day + " " + date.quadrum + " " + date.year + " " + "AMemorialDay".Translate(deadPawn.Name));
             return $"{date.day} {date.quadrum} {date.year} " +
                    "AMemorialDay".Translate(deadPawn.Name.ToString());
         }
 
         return $"{date.day} {date.quadrum} {date.year} colonist died";
-        //return (date.day + " " + date.quadrum + " " + date.year + " " + deadPawn.Name + " died.");
     }
 
     public bool TryStartEvent()
@@ -75,14 +68,7 @@ internal class AMemorialDay : IEvent
 
     public bool TryStartEvent(Map map)
     {
-        var isThisYear = true;
-        foreach (var y in yearsWhenEventStarted)
-        {
-            if (y == Utils.CurrentYear())
-            {
-                isThisYear = false;
-            }
-        }
+        var isThisYear = yearsWhenEventStarted.Any(y => y == Utils.CurrentYear());
 
 
         if (Utils.CurrentDay() != date.day || Utils.CurrentQuadrum() != date.quadrum ||
@@ -92,7 +78,6 @@ internal class AMemorialDay : IEvent
             return false;
         }
 
-        //Pawn = PartyUtility.FindRandomPartyOrganizer(Faction.OfPlayer, map);
         var pawn = GatheringsUtility.FindRandomGatheringOrganizer(Faction.OfPlayer, map, GatheringDefOf.Party);
 
         if (pawn == null)
@@ -100,20 +85,22 @@ internal class AMemorialDay : IEvent
             return false;
         }
 
-        //if (!RCellFinder.TryFindPartySpot(pawn, out intVec))
         if (!RCellFinder.TryFindGatheringSpot(pawn, GatheringDefOf.Party, true, out var intVec))
         {
             return false;
         }
 
         yearsWhenEventStarted.Add(Utils.CurrentYear());
-        //Lord lord = LordMaker.MakeNewLord(pawn.Faction, new LordJob_Joinable_Party(intVec, pawn), map, null);
         _ = LordMaker.MakeNewLord(pawn.Faction,
             new LordJob_Joinable_Party(intVec, pawn, GatheringDefOf.Party), map);
 
-        //Find.LetterStack.ReceiveLetter("Memorial Day", "Colonist are gathering to honor fallen colonists.", LetterDefOf.PositiveEvent);
         Find.LetterStack.ReceiveLetter("AMemorialDayLetter".Translate(), "AMemorialDayDesc".Translate(),
             LetterDefOf.PositiveEvent);
         return true;
+    }
+
+    private void AddAttendedMemorialDay(Pawn pawn)
+    {
+        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedMemorialDay);
     }
 }

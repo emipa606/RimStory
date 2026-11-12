@@ -4,9 +4,9 @@ using Verse;
 namespace RimStory;
 
 [HarmonyPatch(typeof(Pawn), nameof(Pawn.Kill))]
-internal class Pawn_Kill
+internal static class Pawn_Kill
 {
-    private static void Prefix(Pawn __instance)
+    public static void Prefix(Pawn __instance)
     {
         if (!__instance.IsColonist)
         {

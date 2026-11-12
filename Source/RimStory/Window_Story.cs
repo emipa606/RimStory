@@ -20,7 +20,7 @@ internal class Window_Story : MainTabWindow
     private Rect inner;
     private Rect outter;
 
-    public override void DoWindowContents(Rect rect)
+    public override void DoWindowContents(Rect inRect)
     {
         if (!RimStoryMod.settings.enableLogging)
         {
@@ -31,7 +31,7 @@ internal class Window_Story : MainTabWindow
         {
             Text.Font = GameFont.Small;
 
-            outter = new Rect(rect.position, new Vector2(rect.width - 200, rect.height));
+            outter = new Rect(inRect.position, new Vector2(inRect.width - 200, inRect.height));
             var txtWidth = outter.width - 120;
             var yoff = 20f;
             float logHeight = 0;
@@ -42,9 +42,9 @@ internal class Window_Story : MainTabWindow
 
             logHeight += Resources.eventsLog.Count * 10;
 
-            bigRect = new Rect(rect.position, new Vector2(rect.width, defaultLogSize + logHeight));
-            logSize = new Vector2(rect.x, defaultLogSize + logHeight);
-            inner = new Rect(rect.position, logSize);
+            bigRect = new Rect(inRect.position, new Vector2(inRect.width, defaultLogSize + logHeight));
+            logSize = new Vector2(inRect.x, defaultLogSize + logHeight);
+            inner = new Rect(inRect.position, logSize);
 
             Widgets.BeginScrollView(outter, ref vect, inner);
 
@@ -84,12 +84,9 @@ internal class Window_Story : MainTabWindow
                 }
             }
 
-            foreach (var e in Resources.eventsLog.Reverse<IEvent>())
+            foreach (var e in Resources.eventsLog.Reverse<IEvent>().Where(e => e is CustomEvent && !e.IsStillEvent()))
             {
-                if (e is CustomEvent && !e.IsStillEvent())
-                {
-                    Resources.eventsLog.Remove(e);
-                }
+                Resources.eventsLog.Remove(e);
             }
 
             var txtRect = new Rect(outter.x + 50, yoff + 20, txtWidth, 200);
@@ -107,13 +104,10 @@ internal class Window_Story : MainTabWindow
                 customText = str;
             }
 
-            if (listing_Standard.ButtonText("Save"))
+            if (listing_Standard.ButtonText("Save") && customText != "")
             {
-                if (customText != "")
-                {
-                    Resources.eventsLog.Add(new CustomEvent(Utils.CurrentDate(), customText));
-                    customText = "";
-                }
+                Resources.eventsLog.Add(new CustomEvent(Utils.CurrentDate(), customText));
+                customText = "";
             }
 
             listing_Standard.End();
@@ -121,7 +115,7 @@ internal class Window_Story : MainTabWindow
 
         Widgets.EndScrollView();
 
-        filterRect = new Rect(new Vector2(outter.width, rect.position.y), new Vector2(200, 200));
+        filterRect = new Rect(new Vector2(outter.width, inRect.position.y), new Vector2(200, 200));
         listing_Standard.Begin(filterRect);
         listing_Standard.CheckboxLabeled("ShowRaidsInLog".Translate(), ref Resources.showRaidsInLog);
         listing_Standard.CheckboxLabeled("ShowDeadColonistsInLog".Translate(),
@@ -133,6 +127,5 @@ internal class Window_Story : MainTabWindow
 
     public void ExposeData()
     {
-        // throw new NotImplementedException();
     }
 }

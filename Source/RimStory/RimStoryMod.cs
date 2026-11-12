@@ -1,6 +1,4 @@
-﻿//using SettingsHelper;
-
-using System.Reflection;
+﻿using System.Reflection;
 using HarmonyLib;
 using Mlie;
 using UnityEngine;

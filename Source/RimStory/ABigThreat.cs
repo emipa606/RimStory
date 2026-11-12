@@ -1,6 +1,6 @@
-﻿using RimWorld;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using RimWorld;
 using Verse;
 using Verse.AI.Group;
 
@@ -78,14 +78,7 @@ internal class ABigThreat : IEvent
             return false;
         }
 
-        var isThisYear = true;
-        foreach (var y in yearsWhenEventStarted)
-        {
-            if (y == Utils.CurrentYear())
-            {
-                isThisYear = false;
-            }
-        }
+        var isThisYear = yearsWhenEventStarted.Any(y => y == Utils.CurrentYear());
 
         if (Utils.CurrentDay() != date.day || Utils.CurrentQuadrum() != date.quadrum ||
             Utils.CurrentHour() < Resources.minHour || Utils.CurrentHour() > Resources.maxHour ||

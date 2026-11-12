@@ -51,8 +51,6 @@ internal class IncidentShort : IEvent
     public string ShowInLog()
     {
         return $"{date.day} {date.quadrum} {date.year} " + name.Translate();
-        //return (date.day + " " + date.quadrum + " " + date.year + " " + "IncidentShort".Translate(name));
-        //return null;
     }
 
     public bool TryStartEvent()

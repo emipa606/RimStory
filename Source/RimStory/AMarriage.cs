@@ -25,16 +25,6 @@ internal class AMarriage : IEvent
         this.pawn2 = pawn2;
     }
 
-    private void AddAttendedAnniversaryThoughts(Pawn pawn)
-    {
-        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedAnniversary);
-    }
-
-    private void AddAttendedOurAnniversaryThoughts(Pawn pawn)
-    {
-        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedOurAnniversary);
-    }
-
     public Date Date()
     {
         return date;
@@ -76,14 +66,7 @@ internal class AMarriage : IEvent
 
     public bool TryStartEvent(Map map)
     {
-        var isThisYear = true;
-        foreach (var y in yearsWhenEventStarted)
-        {
-            if (y == Utils.CurrentYear())
-            {
-                isThisYear = false;
-            }
-        }
+        var isThisYear = yearsWhenEventStarted.Any(y => y == Utils.CurrentYear());
 
         if (Utils.CurrentDay() != date.day || Utils.CurrentQuadrum() != date.quadrum ||
             Utils.CurrentHour() < 10 || Utils.CurrentHour() > 20 ||
@@ -102,7 +85,6 @@ internal class AMarriage : IEvent
             return false;
         }
 
-        //if (!RCellFinder.TryFindPartySpot(pawn1, out intVec))
         if (!RCellFinder.TryFindMarriageSite(pawn1, pawn2, out var intVec))
         {
             return false;
@@ -110,11 +92,9 @@ internal class AMarriage : IEvent
 
         yearsWhenEventStarted.Add(Utils.CurrentYear());
 
-        //Lord lord = LordMaker.MakeNewLord(pawn1.Faction, new LordJob_Joinable_Party(intVec, pawn1), map, null);
         _ = LordMaker.MakeNewLord(pawn1.Faction,
             new LordJob_Joinable_Party(intVec, pawn1, GatheringDefOf.Party), map);
 
-        //Find.LetterStack.ReceiveLetter("Wedding anniversary", pawn1.LabelShort + " and " + pawn2.LabelShort + " anniversary.", LetterDefOf.PositiveEvent);
         Find.LetterStack.ReceiveLetter("AMarriageLetter".Translate(),
             "AMarriageDesc".Translate(pawn1.LabelShort, pawn2.LabelShort),
             LetterDefOf.PositiveEvent);
@@ -142,5 +122,15 @@ internal class AMarriage : IEvent
         }
 
         return true;
+    }
+
+    private static void AddAttendedAnniversaryThoughts(Pawn pawn)
+    {
+        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedAnniversary);
+    }
+
+    private static void AddAttendedOurAnniversaryThoughts(Pawn pawn)
+    {
+        pawn.needs.mood.thoughts.memories.TryGainMemory(Thoughts.RS_AttendedOurAnniversary);
     }
 }

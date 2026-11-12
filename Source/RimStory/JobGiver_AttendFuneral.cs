@@ -18,7 +18,7 @@ internal class JobGiver_AttendFuneral : ThinkNode_JobGiver
     }
 
 
-    private class RS_JobDefOf
+    private static class RS_JobDefOf
     {
         public static JobDef AttendFuneral;
     }

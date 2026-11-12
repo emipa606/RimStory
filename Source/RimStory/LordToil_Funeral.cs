@@ -18,49 +18,36 @@ internal class LordToil_Funeral : LordToil
         this.spot = spot;
         this.ticksPerPartyPulse = ticksPerPartyPulse;
         data = new LordToilData_Gathering();
-        //this.Data.ticksToNextPulse = ticksPerPartyPulse;
 
         foreach (var pawn in lord.ownedPawns)
         {
             Data.presentForTicks[pawn] = ticksPerPartyPulse;
         }
-        //TODO correct?
     }
 
     private LordToilData_Gathering Data => (LordToilData_Gathering)data;
 
     public override void LordToilTick()
     {
-        //TODO test
-
-        //if (--this.Data.ticksToNextPulse <= 0)
+        var ownedPawns = lord.ownedPawns;
+        foreach (var pawn in ownedPawns)
         {
-            //this.Data.ticksToNextPulse = this.ticksPerPartyPulse;
-
-            var ownedPawns = lord.ownedPawns;
-            foreach (var pawn in ownedPawns)
+            if (--Data.presentForTicks[pawn] > 0)
             {
-                //
-                if (--Data.presentForTicks[pawn] > 0)
-                {
-                    continue;
-                }
+                continue;
+            }
 
-                Data.presentForTicks[pawn] = ticksPerPartyPulse;
-                //
+            Data.presentForTicks[pawn] = ticksPerPartyPulse;
 
-                //if (PartyUtility.InPartyArea(ownedPawns[i].Position, this.spot, base.Map))
-                if (!GatheringsUtility.InGatheringArea(pawn.Position, spot, Map))
-                {
-                    continue;
-                }
+            if (!GatheringsUtility.InGatheringArea(pawn.Position, spot, Map))
+            {
+                continue;
+            }
 
-                //ownedPawns[i].needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.AttendedParty, null);
-                if (lord.LordJob is LordJob_RimStory lordJob_Joinable_Party)
-                {
-                    TaleRecorder.RecordTale(TaleDefOf.AttendedParty, pawn,
-                        lordJob_Joinable_Party.Organizer);
-                }
+            if (lord.LordJob is LordJob_RimStory lordJob_Joinable_Party)
+            {
+                TaleRecorder.RecordTale(TaleDefOf.AttendedParty, pawn,
+                    lordJob_Joinable_Party.Organizer);
             }
         }
     }

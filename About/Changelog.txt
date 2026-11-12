@@ -1,5 +1,8 @@
 # Changelog for RimStory
 
+1.7.0 - Mod updated for 1.7 and passed autotests
+
+
 1.6.4 - Parties should be set in the evening instead
 
 

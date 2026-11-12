@@ -9,7 +9,7 @@ internal class ThinkNode_ConditionalFuneral : ThinkNode_Priority
 {
     public ThinkTreeDutyHook dutyHook;
 
-    private void CheckLeaveCurrentVoluntarilyJoinableLord(Pawn pawn)
+    private static void CheckLeaveCurrentVoluntarilyJoinableLord(Pawn pawn)
     {
         var lord = pawn.GetLord();
 

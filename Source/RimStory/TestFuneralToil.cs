@@ -23,6 +23,8 @@ internal class TestFuneralToil : LordToil
         data = new LordToilData_MarriageCeremony();
     }
 
+    private LordToilData_MarriageCeremony Data => (LordToilData_MarriageCeremony)data;
+
     private CellRect CalculateSpectateRect()
     {
         var first = FianceStandingSpotFor(firstPawn);
@@ -89,8 +91,6 @@ internal class TestFuneralToil : LordToil
     {
         return p == firstPawn || p == secondPawn;
     }
-
-    private LordToilData_MarriageCeremony Data => (LordToilData_MarriageCeremony)data;
 
     public override void Init()
     {

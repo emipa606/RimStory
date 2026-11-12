@@ -4,6 +4,7 @@ namespace RimStory;
 
 internal class RimStorySettings : ModSettings
 {
+    public bool ISLOGGONNARESET = false;
     public bool enableAll = true;
     public bool enableDaysOfVictory = true;
     public bool enableFunerals = true;
@@ -11,7 +12,6 @@ internal class RimStorySettings : ModSettings
     public bool enableLogging = true;
     public bool enableMarriageAnniversary = true;
     public bool enableMemoryDay = true;
-    public bool ISLOGGONNARESET = false;
 
     public override void ExposeData()
     {
